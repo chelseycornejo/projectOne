@@ -10,10 +10,10 @@
         align-items: flex-end;
         height: 70vh;
         h2 {
-            color: white;
+            color: $secondary;
             margin: 0 5vw 5vh 10vw;
             span {
-                color: yellow;
+                color: $accent;
                 display: block;
             }
         }

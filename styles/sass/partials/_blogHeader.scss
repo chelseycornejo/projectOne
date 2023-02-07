@@ -1,0 +1,19 @@
+@use "_variables.scss" as *;
+@use "_mixins.scss" as *;
+
+.blogPage {
+    background-image: url(../planted-final-assets/blog-header-1.jpg);
+    background-size: cover;
+
+    .headerName {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        height: 70vh;
+
+        h2 {
+            color: $accent;
+            margin: 0 5vw 5vh 10vw;
+        }
+    }
+}
