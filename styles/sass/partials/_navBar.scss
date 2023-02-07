@@ -1,0 +1,36 @@
+@use "_variables.scss" as *;
+@use "_mixins.scss" as *;
+
+.navFlex {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    h5 {
+        flex-basis: 15%;
+        @include headerBold(2.1rem);
+        text-align: right;
+        color: white;
+
+    }
+    .navList {
+        flex-basis: 85%;
+        display: flex;
+        li {
+            flex-basis: 10%;
+            text-transform: uppercase;
+            @include headerBold(1rem);
+            a {
+                color: $secondary;
+                padding: 10px;
+                border: 3px rgba(248, 231, 28, 0) solid;
+            }
+            a:hover,
+            a:focus {
+                border: 3px $accent solid;
+            }
+            .currentPage {
+                color: $accent;
+            }
+        }
+    }
+}

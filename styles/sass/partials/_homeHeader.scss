@@ -1,0 +1,33 @@
+@use "_variables.scss" as *;
+@use "_mixins.scss" as *;
+
+.homePage {
+    background-image: url(../planted-final-assets/home-image-1.jpg);
+    background-size: cover;
+    height: 100vh;
+    .headerName {
+        height: 100%;
+    }
+    .headerFlex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            color: white;
+            z-index: 1;
+            padding-right: 60px;
+            span {
+                color: yellow;
+                display: block;
+            }
+        }
+    }
+}
+
+.headerImg {
+    width: 675px;
+    margin: 0;
+    position: relative;
+    right: -53.1vw;
+    bottom: 85vh;
+}

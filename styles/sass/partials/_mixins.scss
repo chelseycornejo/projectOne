@@ -1,0 +1,19 @@
+@use "_variables.scss" as *;
+
+@mixin headerBold ($sizeValue) {
+    font-size: $sizeValue;
+    font-family: $headingFont;
+    font-weight: 700;
+}
+
+@mixin headerRegular ($sizeValue) {
+    font-size: $sizeValue;
+    font-family: $headingFont;
+    font-weight: 400;
+}
+
+@mixin headerLight ($sizeValue) {
+    font-size: $sizeValue;
+    font-family: $headingFont;
+    font-weight: 300;
+}

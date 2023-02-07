@@ -1,0 +1,87 @@
+@use "_variables.scss" as *;
+@use "_mixins.scss" as *;
+
+// GLOBAL STYLES
+
+body {
+    font-family: $baseFont;
+}
+
+.wrapper {
+    max-width: 85%;
+    width: 1950px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+a {
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    @include headerRegular(8.3rem);
+}
+
+h2 {
+    @include headerBold(4rem);
+    line-height: 92px;
+}
+
+h3 {
+    @include headerBold(2.815rem);
+    text-align: center;
+    letter-spacing: 1.3px;
+}
+
+h4 {
+    @include headerBold(2.15rem);
+    letter-spacing: 1.3px;
+}
+
+h5 {
+    @include headerBold(2.1rem);
+    letter-spacing: 1px;
+}
+
+h6 {
+    @include headerBold(1.6rem);
+}
+
+p {
+    line-height: 32px;
+}
+
+.greenLink {
+    background-color: $links;
+    @include headerBold(1rem);
+    color: $secondary;
+    text-align: center;
+    line-height: 32px;
+    letter-spacing: 1px;
+    padding: 15px 30px;
+    border: 3px rgba(248, 231, 28, 0) solid;
+}
+
+.greenLink:hover,
+.greenLink:focus {
+    border: 3px $accent solid;
+}

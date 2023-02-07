@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planted 🪴</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto&display=swap"
+            rel="stylesheet">
+        <script src="https://kit.fontawesome.com/399b5fca97.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="contactPage">
+        <nav class="navFlex">
+            <h5>Planted</h5>
+            <ul class="navList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="currentPage">Contact</a></li>
+            </ul><!-- END of .navBar -->
+        </nav><!-- END of .navFlex -->
+
+        <div class="headerName headerFlex">
+            <h2>Get in<span>touch</span></h2>
+        </div>
+    </header> <!-- END of HEADER SECTION -->
+
+    <!-- MAIN SECTION -->
+    <main>
+        <section class="contact">
+            <div class="wrapper">
+                <div class="contactFlex"> <!-- Flex Parent -->
+                    <!-- CONTACT INFO SECTION -->
+                    <aside class="contactInfo">
+                        <ul class="socialIconFlex">
+                            <li class="socialIcons">
+                                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li class="socialIcons">
+                                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li class="socialIcons">
+                                <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li class="socialIcons">
+                                <a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                            </li>
+                        </ul>
+                        <h6>info@email.com</h6>
+                        <p>123 - 456 - 7890
+                        <br></br>
+                        123 Queen Street West, Unit 10
+                        <br></br>
+                        Toronto, Ontario
+                        <br></br>
+                        M5V2D5</p>
+                    </aside>
+
+                    <!-- FORM SECTION -->
+                    <form class="contactForm" action="">
+                        <fieldset>
+                            <label for="name" class="sr-only"></label>
+                            <div class="underline">
+                                <input type="text" name="name" id="name" placeholder="Name">
+                            </div>
+
+                            <label for="email" class="sr-only"></label>
+                            <div class="underline">
+                                <input type="email" name="email" id="email" placeholder="Email">
+                            </div>
+                        </fieldset>
+                        <textarea name="messageText" id="messagText" cols="90" rows="20" placeholder="Message"></textarea>
+                        <button type="submit" class="greenLink">Submit</button>
+                    </form>
+                </div> <!-- END of .contactFlex -->
+            </div> <!-- END of .wrapper -->
+        </section> <!-- END of .contact -->
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <p>Copyright © 2018 HackerYou</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,635 @@
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article, aside, footer, header, nav, section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+figcaption, figure, main {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: inherit;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+audio, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox], [type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details, menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 125%;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  max-width: 85%;
+  width: 1950px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+a {
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 8.3rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 4rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  line-height: 92px;
+}
+
+h3 {
+  font-size: 2.815rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1.3px;
+}
+
+h4 {
+  font-size: 2.15rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+}
+
+h5 {
+  font-size: 2.1rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+h6 {
+  font-size: 1.6rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+}
+
+p {
+  line-height: 32px;
+}
+
+.greenLink {
+  background-color: #0E902D;
+  font-size: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  line-height: 32px;
+  letter-spacing: 1px;
+  padding: 15px 30px;
+  border: 3px rgba(248, 231, 28, 0) solid;
+}
+
+.greenLink:hover,
+.greenLink:focus {
+  border: 3px #f8e71c solid;
+}
+
+.homePage {
+  background-image: url(../planted-final-assets/home-image-1.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+.homePage .headerName {
+  height: 100%;
+}
+.homePage .headerFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.homePage .headerFlex h1 {
+  color: white;
+  z-index: 1;
+  padding-right: 60px;
+}
+.homePage .headerFlex h1 span {
+  color: yellow;
+  display: block;
+}
+
+.headerImg {
+  width: 675px;
+  margin: 0;
+  position: relative;
+  right: -53.1vw;
+  bottom: 85vh;
+}
+
+.navFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 15px;
+}
+.navFlex h5 {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+  font-size: 2.1rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  text-align: right;
+  color: white;
+}
+.navFlex .navList {
+  -ms-flex-preferred-size: 85%;
+      flex-basis: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.navFlex .navList li {
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+}
+.navFlex .navList li a {
+  color: #fff;
+  padding: 10px;
+  border: 3px rgba(248, 231, 28, 0) solid;
+}
+.navFlex .navList li a:hover,
+.navFlex .navList li a:focus {
+  border: 3px #f8e71c solid;
+}
+.navFlex .navList li .currentPage {
+  color: #f8e71c;
+}
+
+.aboutPlanted {
+  background: #F0EFED;
+}
+.aboutPlanted .wrapper {
+  text-align: center;
+  padding: 20vh 10vw;
+}
+.aboutPlanted .wrapper p {
+  margin: 40px 0;
+}
+
+.blogFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+.blogFlex figure {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  margin: 0;
+}
+.blogFlex article {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+.blogFlex article p {
+  margin: 40px 0;
+}
+.blogFlex .blog1 {
+  padding-right: 30px;
+}
+.blogFlex .blog2 {
+  padding-left: 30px;
+  text-align: right;
+}
+
+.containerLeft {
+  background: #f8e71c;
+  position: relative;
+  right: -20px;
+  bottom: 40px;
+}
+.containerLeft .offsetLeft {
+  position: relative;
+  right: 20px;
+  bottom: 20px;
+}
+
+.containerRight {
+  background: #f8e71c;
+  position: relative;
+  bottom: -45px;
+  left: -20px;
+}
+.containerRight .offsetRight {
+  position: relative;
+  bottom: 20px;
+  left: 20px;
+}
+
+section.infoSection {
+  background-color: #F0EFED;
+  padding: 80px 0px;
+}
+section.infoSection .infoFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+section.infoSection .infoFlex .infoSection {
+  -ms-flex-preferred-size: calc(50% - 60px);
+      flex-basis: calc(50% - 60px);
+  margin: 30px 30px;
+}
+
+.iconFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.iconFlex .infoLogo {
+  background-color: #f8e71c;
+  border-radius: 50%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 20px;
+  font-size: 1.5rem;
+}
+
+.infoSection p {
+  padding-left: 70px;
+}
+
+.founder {
+  background: #F0EFED;
+  padding: 90px 0px;
+}
+.founder .founderFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.founder .founderFlex figure {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  top: 0px;
+  bottom: 0px;
+}
+.founder .founderFlex article {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  padding-left: 50px;
+}
+
+.flexGallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 60px 0;
+  padding: 0;
+}
+.flexGallery li {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.contactPage {
+  background-image: url(../planted-final-assets/contact-header-1.jpg);
+  background-size: cover;
+}
+.contactPage .headerName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 70vh;
+}
+.contactPage .headerName h2 {
+  color: white;
+  margin: 0 5vw 5vh 10vw;
+}
+.contactPage .headerName h2 span {
+  color: yellow;
+  display: block;
+}
+
+.contactFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contactFlex .contactInfo {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+}
+.contactFlex .contactForm {
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+}
+
+.contactInfo .socialIconFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+.contactInfo .socialIconFlex .socialIcons {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+  margin-bottom: 30px;
+}
+.contactInfo .socialIconFlex .socialIcons .fa-brands {
+  color: #0E902D;
+  font-size: 1.2rem;
+}
+
+footer {
+  background: #2C2C2C;
+  color: #fff;
+}
+footer p {
+  margin: 0;
+  padding: 5spx 0;
+  text-align: center;
+}

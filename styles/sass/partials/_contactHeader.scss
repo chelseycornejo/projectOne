@@ -1,0 +1,21 @@
+@use "_variables.scss" as *;
+@use "_mixins.scss" as *;
+
+.contactPage {
+    background-image: url(../planted-final-assets/contact-header-1.jpg);
+    background-size: cover;
+    .headerName {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        height: 70vh;
+        h2 {
+            color: white;
+            margin: 0 5vw 5vh 10vw;
+            span {
+                color: yellow;
+                display: block;
+            }
+        }
+    }
+}

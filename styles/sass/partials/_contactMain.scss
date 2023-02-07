@@ -1,0 +1,31 @@
+@use "_variables.scss" as *;
+@use "_mixins.scss" as *;
+
+.contactFlex {
+    display: flex;
+    align-items: center;
+    .contactInfo {
+        flex-basis: 45%;
+    }
+    .contactForm {
+        flex-basis: 55%;
+    }
+}
+
+// .contactInfo SECTION
+.contactInfo {
+    .socialIconFlex {
+        display: flex;
+        padding: 0;
+        .socialIcons {
+            flex-basis: 15%;
+            margin-bottom: 30px;
+            .fa-brands {
+                color: $links;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+// .contactForm SECTION

@@ -1,0 +1,136 @@
+@use "_variables.scss" as *;
+@use "_mixins.scss" as *;
+
+// ABOUT PLANTED SECTION
+.aboutPlanted {
+    background: $sectionBackground;
+    .wrapper {
+        text-align: center;
+        padding: 20vh 10vw;
+        p {
+            margin: 40px 0;
+        }
+    }
+}
+
+// BLOG SECTION
+.blogFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    figure{
+        flex-basis: 45%;
+        margin: 0;
+    }
+    article {
+        flex-basis: 40%;
+        p {
+            margin: 40px 0;
+        }
+    }
+    .blog1 {
+        padding-right: 30px;
+    }
+    .blog2 {
+        padding-left: 30px;
+        text-align: right;
+    }
+}
+
+.containerLeft {
+    background: $accent;
+    position: relative;
+    right: -20px;
+    bottom: 40px;
+    .offsetLeft {
+        position: relative;
+        right: 20px;
+        bottom: 20px;
+    }
+}
+
+.containerRight {
+    background: $accent;
+    position: relative;
+    bottom: -45px;
+    left: -20px;
+    .offsetRight {
+        position: relative;
+        bottom: 20px;
+        left: 20px;
+    }
+}
+
+// INFO SECTION
+section.infoSection {
+    background-color: $sectionBackground;
+    padding: 80px 0px;
+    .infoFlex {
+        display: flex;
+        flex-wrap: wrap;
+        .infoSection {
+            flex-basis: calc( 50% - 60px );
+            margin: 30px 30px;
+        }
+    }
+}
+
+.iconFlex {
+    display: flex;
+    align-items: center;
+    .infoLogo {
+        background-color: $accent;
+        border-radius: 50%;
+        text-align: center;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+        font-size: 1.5rem;
+    }
+}
+
+.infoSection p {
+    padding-left: 70px;
+}
+// BANNER SECTION
+// 
+// Is it ok that I didn't do any styling? Just made the section element the container.
+// 
+// 
+
+// FOUNDER SECTION
+
+.founder {
+    background: $sectionBackground;
+    padding: 90px 0px;
+    .founderFlex {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        figure {
+            flex-basis: 25%;
+            top: 0px;
+            bottom: 0px;
+        }
+        article {
+            flex-basis: 70%;
+            padding-left: 50px;
+        }
+    }
+}
+
+// GALLERY SECTION
+.flexGallery {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    margin: 60px 0;
+    padding: 0;
+    li {
+        flex-basis: 30%;
+    }
+}

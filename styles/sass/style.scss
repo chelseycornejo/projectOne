@@ -1,0 +1,15 @@
+@use "./partials/setup";
+@use "./partials/global";
+@use "./partials/variables";
+@use "./partials/mixins";
+@use "./partials/homeHeader";
+@use "./partials/navBar";
+@use "./partials/homeMain";
+@use "./partials/contactHeader";
+@use "./partials/contactMain";
+@use "./partials/blogHeader";
+@use "./partials/blogMain";
+@use "./partials/footer";
+@use "./partials/homeMediaQueries";
+@use "./partials/contactMediaQueries";
+@use "./partials/blogMediaQueries";

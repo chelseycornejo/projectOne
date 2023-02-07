@@ -1,0 +1,12 @@
+@use "_variables.scss" as *;
+@use "_mixins.scss" as *;
+
+footer {
+    background: $primary;
+    color: $secondary;
+    p {
+        margin: 0;
+        padding: 5spx 0;
+        text-align: center;
+    }
+}
