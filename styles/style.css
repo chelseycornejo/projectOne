@@ -300,6 +300,7 @@ h6 {
   font-size: 1.6rem;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
+  letter-spacing: 1px;
 }
 
 p {
@@ -460,6 +461,7 @@ p {
   position: relative;
   right: 20px;
   bottom: 20px;
+  background-color: #fff;
 }
 
 .containerRight {
@@ -472,6 +474,7 @@ p {
   position: relative;
   bottom: 20px;
   left: 20px;
+  background-color: #fff;
 }
 
 section.infoSection {
@@ -591,7 +594,10 @@ section.infoSection .infoFlex .infoSection {
   display: block;
 }
 
-.contactFlex {
+.contact {
+  background-color: #F0EFED;
+}
+.contact .contactFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -599,13 +605,13 @@ section.infoSection .infoFlex .infoSection {
       -ms-flex-align: center;
           align-items: center;
 }
-.contactFlex .contactInfo {
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
+.contact .contactFlex .contactInfo {
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
 }
-.contactFlex .contactForm {
-  -ms-flex-preferred-size: 55%;
-      flex-basis: 55%;
+.contact .contactFlex .contactForm {
+  -ms-flex-preferred-size: 66%;
+      flex-basis: 66%;
 }
 
 .contactInfo .socialIconFlex {
@@ -622,6 +628,57 @@ section.infoSection .infoFlex .infoSection {
 .contactInfo .socialIconFlex .socialIcons .fa-brands {
   color: #0E902D;
   font-size: 1.2rem;
+}
+
+.contactInfo p {
+  line-height: 20px;
+}
+
+.containerRight {
+  bottom: 200px;
+  left: -20px;
+}
+.containerRight .contactMessageForm {
+  padding: 20px;
+}
+
+.userInfoFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.userInfoFlex .underline {
+  -ms-flex-preferred-size: 49%;
+      flex-basis: 49%;
+}
+
+.userInfoFlex,
+.messageArea {
+  padding: 0 25px;
+}
+.userInfoFlex input,
+.userInfoFlex textarea,
+.userInfoFlex button,
+.messageArea input,
+.messageArea textarea,
+.messageArea button {
+  width: 100%;
+  padding: 15px;
+  margin: 20px 10px;
+}
+.userInfoFlex input,
+.messageArea input {
+  border: none;
+  border-bottom: #0E902D 3px solid;
+}
+.userInfoFlex textarea,
+.messageArea textarea {
+  border: 3px #0E902D solid;
+  resize: none;
 }
 
 footer {

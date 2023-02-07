@@ -61,21 +61,25 @@
                     </aside>
 
                     <!-- FORM SECTION -->
-                    <form class="contactForm" action="">
-                        <fieldset>
-                            <label for="name" class="sr-only"></label>
-                            <div class="underline">
-                                <input type="text" name="name" id="name" placeholder="Name">
+                    <form class="contactForm containerRight" action="">
+                        <div class="offsetRight contactMessageForm">
+                            <fieldset class="userInfoFlex">
+                                <div class="underline">
+                                <label for="name" class="sr-only"></label>
+                                    <input type="text" name="name" id="name" placeholder="Name">
+                                </div>
+    
+                                <div class="underline">
+                                <label for="email" class="sr-only"></label>
+                                    <input type="email" name="email" id="email" placeholder="Email">
+                                </div>
+                            </fieldset>
+                            <div class="messageArea">
+                                <textarea name="messageText" id="messagText" cols="80" rows="13" maxlength="300" placeholder="Message"></textarea>
+                                <button type="submit" class="greenLink">Submit</button>
                             </div>
-
-                            <label for="email" class="sr-only"></label>
-                            <div class="underline">
-                                <input type="email" name="email" id="email" placeholder="Email">
-                            </div>
-                        </fieldset>
-                        <textarea name="messageText" id="messagText" cols="90" rows="20" placeholder="Message"></textarea>
-                        <button type="submit" class="greenLink">Submit</button>
-                    </form>
+                        </div><!-- END of .offsetRight -->
+                    </form> <!-- END of Form -->
                 </div> <!-- END of .contactFlex -->
             </div> <!-- END of .wrapper -->
         </section> <!-- END of .contact -->

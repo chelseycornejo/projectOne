@@ -1,14 +1,17 @@
 @use "_variables.scss" as *;
 @use "_mixins.scss" as *;
 
-.contactFlex {
-    display: flex;
-    align-items: center;
-    .contactInfo {
-        flex-basis: 45%;
-    }
-    .contactForm {
-        flex-basis: 55%;
+.contact {
+    background-color: $sectionBackground;
+    .contactFlex {
+        display: flex;
+        align-items: center;
+        .contactInfo {
+            flex-basis: 35%;
+        }
+        .contactForm {
+            flex-basis: 66%;
+        }
     }
 }
 
@@ -28,4 +31,44 @@
     }
 }
 
+.contactInfo p {
+    line-height: 20px;
+}
 // .contactForm SECTION
+
+.containerRight {
+    bottom: 200px;
+    left: -20px;
+    .contactMessageForm {
+        padding: 20px;
+    }
+}
+
+.userInfoFlex {
+    display: flex;
+    border: none;
+    justify-content: space-between;
+    .underline {
+        flex-basis: 49%;
+        }
+    }
+
+.userInfoFlex,
+.messageArea {
+    padding: 0 25px;
+    input,
+    textarea,
+    button {
+        width: 100%;
+        padding: 15px;
+        margin: 20px 10px;
+    }
+    input{
+        border: none;
+        border-bottom: $links 3px solid;
+    }
+    textarea {
+        border: 3px $links solid;
+        resize: none;
+    }
+}
