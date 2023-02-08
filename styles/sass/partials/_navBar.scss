@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     padding-top: 15px;
+    background: $navBackground;
     h5 {
         flex-basis: 15%;
         @include headerBold(2.1rem);
@@ -33,4 +34,8 @@
             }
         }
     }
+}
+
+.homeNav {
+    background: none;
 }

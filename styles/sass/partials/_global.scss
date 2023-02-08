@@ -37,6 +37,8 @@ a {
     text-decoration: none;
 }
 
+// TYPOGRAPHY
+
 h1 {
     @include headerRegular(8.3rem);
 }
@@ -71,6 +73,10 @@ p {
     line-height: 32px;
 }
 
+em,
+strong {
+    color: $date;
+}
 .greenLink {
     background-color: $links;
     @include headerBold(1rem);

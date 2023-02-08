@@ -1,3 +1,5 @@
+<!-- QUESTION: Should I be using section or div for right side? -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,20 +15,97 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-        <header class="blogPage">
-            <nav class="navFlex">
-                <h5>Planted</h5>
-                <ul class="navList">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="blog.html" class="currentPage">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul><!-- END of .navBar -->
-            </nav><!-- END of .navFlex -->
-            <div class="headerName headerFlex">
-                <h2>Blog</h2>
-            </div>
-        </header> <!-- END of HEADER SECTION -->
+    <!-- HEADER SECTION -->
+    <header class="blogPage">
+        <nav class="navFlex">
+            <h5>Planted</h5>
+            <ul class="navList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="blog.html" class="currentPage">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul><!-- END of .navBar -->
+        </nav><!-- END of .navFlex -->
+        <div class="headerName headerFlex">
+            <h2>Blog</h2>
+        </div>
+    </header> <!-- END of HEADER SECTION -->
 
+    <!-- MAIN SECTION -->
+    <main>
+        <section class="blog">
+
+            <!-- SIDEBAR SECTION -->
+            <div class="sideInfo">
+                <!-- sidebar photo -->
+                <figure>
+                    <img src="./planted-final-assets/side-bar-image.jpg" alt="window on an old stone house">
+                </figure>
+        
+                <!-- about section -->
+                <ul class="sideBar">
+                    <li>
+                        <h6>About Planted</h6>
+                        <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. <a href="index.html#about"><em><strong>Find out more.</strong></em></a></p>
+                    </li>
+                    <li>
+                        <!-- recent posts -->
+                        <h6>Recent Posts</h6>
+                        <ul class="recentPosts">
+                            <li><a href="#">Donec facilisis tortor ut</a></li>
+                            <li><a href="#">Augue lacinia at viverra</a></li>
+                            <li><a href="#">Semper sed sapien metus</a></li>
+                            <li><a href="#">Scelerisque nec pharetra id</a></li>
+                        </ul> <!-- END of .recentPosts -->
+                    </li>
+                </ul> <!-- END of .sideBar -->
+            </div> <!-- END of .sideInfo -->
+            
+            <!-- BLOGPOST SECTION -->
+            <div class="blogPost">
+
+                <!-- blog photo -->
+                <section class="blogImg">
+                    <figure>
+                        <img src="" alt="">
+                    </figure>
+                </section>
+
+                <!-- mission post section -->
+                <article class="missionPost">
+                    <h4>Our mission at Planted</h4>
+                    <p><em>Monday January 21st, 2019 by <strong>Yousra</strong></em></p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime architecto dicta sint reprehenderit cupiditate. Illo tenetur ipsa perferendis dolore dignissimos quaerat aliquid. Nostrum minus nulla temporibus facilis iusto maxime esse?</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum iure alias obcaecati officia reprehenderit? Culpa placeat obcaecati, architecto nobis dolor recusandae illum. Fuga blanditiis dignissimos enim animi pariatur neque beatae.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat asperiores tempore quia ullam? Quam fugiat pariatur illum maxime odio aut unde nemo nihil velit sit incidunt, labore modi quos ut! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis hic doloribus quas itaque dolore eligendi, dignissimos modi praesentium, sit rem nemo. Doloremque, distinctio inventore reprehenderit quos quo nemo asperiores facere.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum sequi totam delectus aliquam dignissimos ullam doloremque, illo, odio harum iste tempore doloribus tempora cupiditate, fugit perspiciatis. Perspiciatis blanditiis ipsam assumenda?</p>
+                </article>
+
+                <!-- comments section -->
+                <section class="commentsSection">
+                    <h5>Comments:</h5>
+                    <ul class="comments">
+                        <li class="commentFlex">
+                            <figure><img src="./planted-final-assets/profile-image.jpg" alt="profile photo of person"></figure>
+                            <p class="date">Tuesday October 9th, 2018 by Jeremy</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, quasi inventore, amet minus enim aperiam molestias ipsa, corrupti odit a nostrum quos officia eos ut atque aliquam aliquid rem! Tenetur.</p>
+                        </li>
+                        <li class="commentFlex">
+                            <figure><img src="./planted-final-assets/profile-image-2.jpg" alt="profile photo of person"></figure>
+                            <p class="date">Wednesday October 10th, 2018 by Julia</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, quasi inventore, amet minus enim aperiam molestias
+                            ipsa, corrupti odit a nostrum quos officia eos ut atque aliquam aliquid rem! Tenetur.</p>
+                        </li>
+                    </ul> <!-- END of .comments -->
+                </section> <!-- END of .commentSection -->
+                <!-- comment form section -->
+            </div> <!-- END of .blogPost -->
+        </section> <!-- END of .blog -->
+    </main> <!-- END of MAIN SECTION -->
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <p>Copyright © 2018 HackerYou</p>
+    </footer>
 </body>
 </html>

@@ -307,6 +307,11 @@ p {
   line-height: 32px;
 }
 
+em,
+strong {
+  color: #074115;
+}
+
 .greenLink {
   background-color: #0E902D;
   font-size: 1rem;
@@ -370,6 +375,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 15px;
+  background: #000;
 }
 .navFlex h5 {
   -ms-flex-preferred-size: 15%;
@@ -406,6 +412,10 @@ p {
 }
 .navFlex .navList li .currentPage {
   color: #f8e71c;
+}
+
+.homeNav {
+  background: none;
 }
 
 .aboutPlanted {
@@ -634,11 +644,11 @@ section.infoSection .infoFlex .infoSection {
   line-height: 20px;
 }
 
-.containerRight {
+.contact .containerRight {
   bottom: 200px;
   left: -20px;
 }
-.containerRight .contactMessageForm {
+.contact .containerRight .contactMessageForm {
   padding: 20px;
 }
 
@@ -699,7 +709,7 @@ section.infoSection .infoFlex .infoSection {
 }
 .blogPage .headerName h2 {
   color: #f8e71c;
-  margin: 0 5vw 5vh 10vw;
+  margin: 0 5vw 10vh 10vw;
 }
 
 footer {
