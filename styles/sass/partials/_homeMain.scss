@@ -3,7 +3,7 @@
 
 // ABOUT PLANTED SECTION
 .aboutPlanted {
-    background: $sectionBackground;
+    background-color: $sectionBackground;
     .wrapper {
         text-align: center;
         padding: 20vh 10vw;
@@ -15,6 +15,7 @@
 
 // BLOG SECTION
 .blogFlex {
+    background: $secondary;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,6 +42,8 @@
 .containerLeft {
     background: $accent;
     position: relative;
+    // right: -20px;
+    // bottom: 40px;
     right: -20px;
     bottom: 40px;
     .offsetLeft {
@@ -54,20 +57,20 @@
 .containerRight {
     background: $accent;
     position: relative;
-    bottom: -45px;
-    left: -20px;
+    right: 20px;
+    bottom: 20px;
     .offsetRight {
         position: relative;
+        right: -20px;
         bottom: 20px;
-        left: 20px;
         background-color: $secondary;
     }
 }
 
 // INFO SECTION
 section.infoSection {
-    background-color: $sectionBackground;
     padding: 80px 0px;
+    background-color: $sectionBackground;
     .infoFlex {
         display: flex;
         flex-wrap: wrap;
@@ -107,8 +110,8 @@ section.infoSection {
 // FOUNDER SECTION
 
 .founder {
-    background: $sectionBackground;
     padding: 90px 0px;
+    background-color: $sectionBackground;
     .founderFlex {
         display: flex;
         justify-content: space-evenly;

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -360,11 +361,11 @@ strong {
 }
 
 .headerImg {
-  width: 675px;
+  width: 680px;
   margin: 0;
   position: relative;
-  right: -53.1vw;
-  bottom: 85vh;
+  right: -52.7vw;
+  bottom: 75vh;
 }
 
 .navFlex {
@@ -419,7 +420,7 @@ strong {
 }
 
 .aboutPlanted {
-  background: #F0EFED;
+  background-color: #F0EFED;
 }
 .aboutPlanted .wrapper {
   text-align: center;
@@ -430,6 +431,7 @@ strong {
 }
 
 .blogFlex {
+  background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -477,19 +479,19 @@ strong {
 .containerRight {
   background: #f8e71c;
   position: relative;
-  bottom: -45px;
-  left: -20px;
+  right: 20px;
+  bottom: 20px;
 }
 .containerRight .offsetRight {
   position: relative;
+  right: -20px;
   bottom: 20px;
-  left: 20px;
   background-color: #fff;
 }
 
 section.infoSection {
-  background-color: #F0EFED;
   padding: 80px 0px;
+  background-color: #F0EFED;
 }
 section.infoSection .infoFlex {
   display: -webkit-box;
@@ -536,8 +538,8 @@ section.infoSection .infoFlex .infoSection {
 }
 
 .founder {
-  background: #F0EFED;
   padding: 90px 0px;
+  background-color: #F0EFED;
 }
 .founder .founderFlex {
   display: -webkit-box;
@@ -710,6 +712,117 @@ section.infoSection .infoFlex .infoSection {
 .blogPage .headerName h2 {
   color: #f8e71c;
   margin: 0 5vw 10vh 10vw;
+}
+
+.blog {
+  background-color: #F0EFED;
+}
+.blog .blogParent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.blog .blogParent .sideChild {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.blog .blogParent .sideChild .sideInfo {
+  background: #fff;
+  width: 350px;
+  height: 860px;
+}
+.blog .blogParent .blogPost {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+.sideInfo {
+  margin-top: 100px;
+}
+.sideInfo .sidePhoto {
+  margin: 0;
+  position: relative;
+  width: 500px;
+  left: -170px;
+  top: -20px;
+}
+
+.sideBar {
+  padding: 20px;
+}
+.sideBar p {
+  margin-bottom: 60px;
+}
+.sideBar .recentPosts li:before {
+  content: "•";
+  font-size: 10pt;
+  margin-right: 10px;
+  color: #0E902D;
+}
+.sideBar .recentPosts a {
+  color: #000;
+  line-height: 32px;
+}
+
+.blogContainer {
+  width: 750px;
+  position: relative;
+  top: -250px;
+}
+.blogContainer .containerRight {
+  margin: 0;
+  width: 815px;
+  top: 0px;
+  left: 0px;
+}
+
+.missionPost {
+  padding: 50px 0px 25px 35px;
+  border-left: 3px solid #f8e71c;
+  border-bottom: 3px solid #f8e71c;
+}
+
+.commentsSection {
+  padding: 50px 0px 25px 35px;
+}
+.commentsSection .comments {
+  padding: 0;
+}
+.commentsSection .comments .commentFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 40px 0;
+}
+.commentsSection .comments .commentFlex figure {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+  margin: 25px 15px 15px 0;
+}
+.commentsSection .comments .commentFlex div {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+}
+
+.date {
+  color: #074115;
+}
+
+.commentForm input,
+.commentForm textarea {
+  background-color: #F0EFED;
 }
 
 footer {
