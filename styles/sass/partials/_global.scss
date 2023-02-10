@@ -92,3 +92,11 @@ strong {
 .greenLink:focus {
     border: 3px $accent solid;
 }
+
+.offsetLeft {
+    box-shadow: 30px 30px 0px -11px $accent;
+}
+
+.offsetRight {
+    box-shadow: -30px 30px 0px -11px $accent;
+}

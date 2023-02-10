@@ -37,8 +37,9 @@
 // .contactForm SECTION
 
 .contact .containerRight {
-    bottom: 200px;
-    left: -20px;
+    position: relative;
+    bottom: 250px;
+    background-color: $secondary;
     .contactMessageForm {
         padding: 20px;
     }

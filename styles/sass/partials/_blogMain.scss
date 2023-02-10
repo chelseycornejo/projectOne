@@ -5,19 +5,21 @@
     background-color: $sectionBackground;
     .blogParent {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         .sideChild {
             flex-basis: 30%;
             display: flex;
             justify-content: flex-end;
+            height: 100%;
             .sideInfo {
                 background: $secondary;
                 width: 350px;
-                height: 860px;
+                margin-top: 20%x;
             }
         }
         .blogPost {
-            flex-basis: 40%;
+            flex-basis: 60%;
+
         }
     }
 }
@@ -28,9 +30,10 @@
     .sidePhoto {
         margin: 0;
         position: relative;
-        width: 500px;
-        left: -170px;
-        top: -20px;
+        // width: 500px;
+        // width: 140%;
+        // left: -46%;
+        // top: -6%;
     }
 }
 
@@ -55,15 +58,13 @@
 }
 
 // BLOG IMAGE SECTION
-.blogContainer {
+.blogPost {
     width: 750px;
-    position: relative;
-    top: -250px;
     .containerRight {
         margin: 0;
         width: 815px;
-        top: 0px;
-        left: 0px;
+        position: relative;
+        right: -20px;
     }
 }
 

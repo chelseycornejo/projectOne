@@ -331,6 +331,16 @@ strong {
   border: 3px #f8e71c solid;
 }
 
+.offsetLeft {
+  -webkit-box-shadow: 30px 30px 0px -11px #f8e71c;
+          box-shadow: 30px 30px 0px -11px #f8e71c;
+}
+
+.offsetRight {
+  -webkit-box-shadow: -30px 30px 0px -11px #f8e71c;
+          box-shadow: -30px 30px 0px -11px #f8e71c;
+}
+
 .homePage {
   background-image: url(../planted-final-assets/home-image-1.jpg);
   background-size: cover;
@@ -449,44 +459,18 @@ strong {
   margin: 0;
 }
 .blogFlex article {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
 }
 .blogFlex article p {
   margin: 40px 0;
 }
 .blogFlex .blog1 {
-  padding-right: 30px;
+  padding: 5% 5% 5% 0%;
 }
 .blogFlex .blog2 {
-  padding-left: 30px;
+  padding: 5% 0% 5% 5%;
   text-align: right;
-}
-
-.containerLeft {
-  background: #f8e71c;
-  position: relative;
-  right: -20px;
-  bottom: 40px;
-}
-.containerLeft .offsetLeft {
-  position: relative;
-  right: 20px;
-  bottom: 20px;
-  background-color: #fff;
-}
-
-.containerRight {
-  background: #f8e71c;
-  position: relative;
-  right: 20px;
-  bottom: 20px;
-}
-.containerRight .offsetRight {
-  position: relative;
-  right: -20px;
-  bottom: 20px;
-  background-color: #fff;
 }
 
 section.infoSection {
@@ -647,8 +631,9 @@ section.infoSection .infoFlex .infoSection {
 }
 
 .contact .containerRight {
-  bottom: 200px;
-  left: -20px;
+  position: relative;
+  bottom: 250px;
+  background-color: #fff;
 }
 .contact .containerRight .contactMessageForm {
   padding: 20px;
@@ -721,9 +706,9 @@ section.infoSection .infoFlex .infoSection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .blog .blogParent .sideChild {
   -ms-flex-preferred-size: 30%;
@@ -734,15 +719,16 @@ section.infoSection .infoFlex .infoSection {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  height: 100%;
 }
 .blog .blogParent .sideChild .sideInfo {
   background: #fff;
   width: 350px;
-  height: 860px;
+  margin-top: 20% x;
 }
 .blog .blogParent .blogPost {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
 }
 
 .sideInfo {
@@ -751,9 +737,6 @@ section.infoSection .infoFlex .infoSection {
 .sideInfo .sidePhoto {
   margin: 0;
   position: relative;
-  width: 500px;
-  left: -170px;
-  top: -20px;
 }
 
 .sideBar {
@@ -773,16 +756,14 @@ section.infoSection .infoFlex .infoSection {
   line-height: 32px;
 }
 
-.blogContainer {
+.blogPost {
   width: 750px;
-  position: relative;
-  top: -250px;
 }
-.blogContainer .containerRight {
+.blogPost .containerRight {
   margin: 0;
   width: 815px;
-  top: 0px;
-  left: 0px;
+  position: relative;
+  right: -20px;
 }
 
 .missionPost {
