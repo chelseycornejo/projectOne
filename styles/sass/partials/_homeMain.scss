@@ -39,6 +39,17 @@
     }
 }
 
+.blogFlex {
+    .containerLeft{
+        position: relative;
+        top: -50px;
+    }
+    .containerRight {
+        position: relative;
+        bottom: -50px;
+    }
+}
+    
 // INFO SECTION
 section.infoSection {
     padding: 80px 0px;

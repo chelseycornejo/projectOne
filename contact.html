@@ -37,51 +37,57 @@
                 <div class="contactFlex"> 
                     <!-- CONTACT INFO SECTION -->
                     <aside class="contactInfo">
-                        <ul class="socialIconFlex">
-                            <li class="socialIcons">
-                                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-                            </li>
-                            <li class="socialIcons">
-                                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                            </li>
-                            <li class="socialIcons">
-                                <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-                            </li>
-                            <li class="socialIcons">
-                                <a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
-                            </li>
-                        </ul>
-                        <h6>info@email.com</h6>
-                        <p>123 - 456 - 7890
-                        <br></br>
-                        123 Queen Street West, Unit 10
-                        <br></br>
-                        Toronto, Ontario
-                        <br></br>
-                        M5V2D5</p>
+                        <div class="contactContainer">
+
+                            <ul class="socialIconFlex">
+                                <li class="socialIcons">
+                                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                                </li>
+                                <li class="socialIcons">
+                                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li class="socialIcons">
+                                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li class="socialIcons">
+                                    <a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                                </li>
+                            </ul>
+                            <h6>info@email.com</h6>
+                            <p>123 - 456 - 7890
+                            <br></br>
+                            123 Queen Street West, Unit 10
+                            <br></br>
+                            Toronto, Ontario
+                            <br></br>
+                            M5V2D5</p>
+                        </div>
                     </aside>
 
                     <!-- FORM SECTION -->
-                    <form class="contactForm containerRight" method="POST" action="#" name="contactForm">
-                        <div class="offsetRight contactMessageForm">
-                            <fieldset class="userInfoFlex">
-                                <div class="underline">
-                                    <label for="name" class="sr-only">Enter your name</label>
-                                    <input type="text" name="name" id="name" placeholder="Name">
+                    <div class="formContainer">
+
+                        <form class="contactForm containerRight" method="POST" action="#" name="contactForm">
+                            <div class="offsetRight contactMessageForm">
+                                <fieldset class="userInfoFlex">
+                                    <div class="underline">
+                                        <label for="name" class="sr-only">Enter your name</label>
+                                        <input type="text" name="name" id="name" placeholder="Name">
+                                    </div>
+                                    
+                                    <div class="underline">
+                                        <label for="email" class="sr-only">Enter your email</label>
+                                        <input type="email" name="email" id="email" placeholder="Email address">
+                                    </div>
+                                </fieldset>
+                                <div class="messageArea">
+                                    <label class="sr-only" or="message">Please enter your message</label>
+                                    <textarea name="messageText" id="messagText" cols="80" rows="13" maxlength="300" placeholder="Message"></textarea>
+                                    <button type="submit" class="greenLink">Submit</button>
                                 </div>
-    
-                                <div class="underline">
-                                <label for="email" class="sr-only">Enter your email</label>
-                                    <input type="email" name="email" id="email" placeholder="Email address">
-                                </div>
-                            </fieldset>
-                            <div class="messageArea">
-                                <label class="sr-only" or="message">Please enter your message</label>
-                                <textarea name="messageText" id="messagText" cols="80" rows="13" maxlength="300" placeholder="Message"></textarea>
-                                <button type="submit" class="greenLink">Submit</button>
-                            </div>
-                        </div><!-- END of .offsetRight -->
-                    </form> <!-- END of Form -->
+                            </div><!-- END of .offsetRight -->
+                        </form> <!-- END of Form -->
+                    </div><!-- END of .formContainer -->
                 </div> <!-- END of .contactFlex -->
             </div> <!-- END of .wrapper -->
         </section> <!-- END of .contact -->

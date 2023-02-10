@@ -6,11 +6,23 @@
     .contactFlex {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         .contactInfo {
-            flex-basis: 35%;
+            // flex-basis: 35%;
+            // added below for test
+            flex-basis: 32.16%;
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: flex-end;
+            // display:flex;
+            // justify-content: center;
+            // .contactContainer {
+            //     flex-basis: 60%;
+            // }
         }
-        .contactForm {
-            flex-basis: 66%;
+        .formContainer {
+            // flex-basis: 60%;
+            flex-basis: 61.88%;
         }
     }
 }
@@ -20,6 +32,8 @@
     .socialIconFlex {
         display: flex;
         padding: 0;
+        justify-content: flex-start;
+        width: 390px;
         .socialIcons {
             flex-basis: 15%;
             margin-bottom: 30px;
@@ -35,11 +49,13 @@
     line-height: 20px;
 }
 // .contactForm SECTION
-
-.contact .containerRight {
+.formContainer {
     position: relative;
     bottom: 250px;
+}
+.contact .containerRight {
     background-color: $secondary;
+    max-width: 855px;
     .contactMessageForm {
         padding: 20px;
     }

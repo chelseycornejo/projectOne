@@ -238,6 +238,10 @@ body {
   margin: 0 auto;
 }
 
+figure {
+  margin: 0;
+}
+
 h1,
 h2,
 h3,
@@ -370,12 +374,19 @@ strong {
   display: block;
 }
 
-.headerImg {
+.headerImgFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.headerImgFlex .headerImg {
   width: 680px;
   margin: 0;
   position: relative;
-  right: -52.7vw;
-  bottom: 75vh;
+  bottom: 79vh;
 }
 
 .navFlex {
@@ -387,6 +398,7 @@ strong {
           align-items: center;
   padding-top: 15px;
   background: #000;
+  padding-left: 10vw;
 }
 .navFlex h5 {
   -ms-flex-preferred-size: 15%;
@@ -394,7 +406,7 @@ strong {
   font-size: 2.1rem;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
-  text-align: right;
+  text-align: left;
   color: white;
 }
 .navFlex .navList {
@@ -403,6 +415,7 @@ strong {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0;
 }
 .navFlex .navList li {
   -ms-flex-preferred-size: 10%;
@@ -471,6 +484,15 @@ strong {
 .blogFlex .blog2 {
   padding: 5% 0% 5% 5%;
   text-align: right;
+}
+
+.blogFlex .containerLeft {
+  position: relative;
+  top: -50px;
+}
+.blogFlex .containerRight {
+  position: relative;
+  bottom: -50px;
 }
 
 section.infoSection {
@@ -600,14 +622,17 @@ section.infoSection .infoFlex .infoSection {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .contact .contactFlex .contactInfo {
-  -ms-flex-preferred-size: 35%;
-      flex-basis: 35%;
+  -ms-flex-preferred-size: 32.16%;
+      flex-basis: 32.16%;
 }
-.contact .contactFlex .contactForm {
-  -ms-flex-preferred-size: 66%;
-      flex-basis: 66%;
+.contact .contactFlex .formContainer {
+  -ms-flex-preferred-size: 61.88%;
+      flex-basis: 61.88%;
 }
 
 .contactInfo .socialIconFlex {
@@ -615,6 +640,10 @@ section.infoSection .infoFlex .infoSection {
   display: -ms-flexbox;
   display: flex;
   padding: 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 390px;
 }
 .contactInfo .socialIconFlex .socialIcons {
   -ms-flex-preferred-size: 15%;
@@ -630,10 +659,14 @@ section.infoSection .infoFlex .infoSection {
   line-height: 20px;
 }
 
-.contact .containerRight {
+.formContainer {
   position: relative;
   bottom: 250px;
+}
+
+.contact .containerRight {
   background-color: #fff;
+  max-width: 855px;
 }
 .contact .containerRight .contactMessageForm {
   padding: 20px;
@@ -711,8 +744,8 @@ section.infoSection .infoFlex .infoSection {
           justify-content: space-between;
 }
 .blog .blogParent .sideChild {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -724,9 +757,9 @@ section.infoSection .infoFlex .infoSection {
 .blog .blogParent .sideChild .sideInfo {
   background: #fff;
   width: 350px;
-  margin-top: 20% x;
+  margin-top: 20%;
 }
-.blog .blogParent .blogPost {
+.blog .blogParent .blogContainer {
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
 }
@@ -756,14 +789,29 @@ section.infoSection .infoFlex .infoSection {
   line-height: 32px;
 }
 
+.blogContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  bottom: 250px;
+}
+.blogContainer .containerRight {
+  margin: 0;
+  position: relative;
+}
+
 .blogPost {
   width: 750px;
-}
-.blogPost .containerRight {
-  margin: 0;
-  width: 815px;
   position: relative;
-  right: -20px;
+  right: 19px;
 }
 
 .missionPost {

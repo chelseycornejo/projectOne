@@ -6,16 +6,17 @@
     align-items: center;
     padding-top: 15px;
     background: $navBackground;
+    padding-left: 10vw;
     h5 {
         flex-basis: 15%;
         @include headerBold(2.1rem);
-        text-align: right;
+        text-align: left;;
         color: white;
-
     }
     .navList {
         flex-basis: 85%;
         display: flex;
+        padding: 0;
         li {
             flex-basis: 10%;
             text-transform: uppercase;
@@ -39,3 +40,4 @@
 .homeNav {
     background: none;
 }
+

@@ -24,10 +24,14 @@
     }
 }
 
-.headerImg {
-    width: 680px;
-    margin: 0;
-    position: relative;
-    right: -52.7vw;
-    bottom: 75vh;
+.headerImgFlex {
+    display: flex;
+    justify-content: flex-end;
+    .headerImg {
+        width: 680px;
+        margin: 0;
+        position: relative;
+        // right: -52.7vw;
+        bottom: 79vh;
+    }
 }
