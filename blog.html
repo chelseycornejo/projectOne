@@ -17,14 +17,20 @@
 <body>
     <!-- HEADER SECTION -->
     <header class="blogPage">
-        <nav class="navFlex">
-            <h5>Planted</h5>
+        <!-- nav starts -->
+        <nav class="navFlex blogNav">
             <ul class="navList">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="blog.html" class="currentPage">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul><!-- END of .navBar -->
+                <h5>Planted</h5>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <li><a href="index.html" class="currentPage">Home</a></li>
+                    <li><a href="./index.html#about">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <label for="check" class="closeMenu"><i class="fa-solid fa-xmark"></i></label>
+                </span>
+                <label for="check" class="openMenu"><i class="fa-solid fa-bars"></i></label>
+            </ul>
         </nav><!-- END of .navFlex -->
         <div class="headerName headerFlex">
             <h2>Blog</h2>

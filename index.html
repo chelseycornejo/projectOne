@@ -17,15 +17,21 @@
 
     <!-- HEADER SECTION -->
     <header class="homePage">
+        <!-- nav starts -->
         <nav class="navFlex homeNav">
-            <h5>Planted</h5>
-                <ul class="navList">
+            <ul class="navList">
+                <h5>Planted</h5>
+                <input type="checkbox" id="check">
+                <span class="menu">
                     <li><a href="index.html" class="currentPage">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                </ul>
-        </nav> <-- END of .navFlex
+                    <label for="check" class="closeMenu"><i class="fa-solid fa-xmark"></i></label>
+                </span>
+                <label for="check" class="openMenu"><i class="fa-solid fa-bars"></i></label>
+            </ul>
+        </nav><!-- END of .navFlex -->
 
         <div class="headerName headerFlex">
             <h1>Planted <span>invitation</span></h1>

@@ -1,0 +1,13 @@
+@use "_variables.scss" as *;
+@use "_mixins.scss" as *;
+
+@media (max-width: 800px) {
+    h1 {
+        padding-left: 60px;
+        text-align: center;
+        @include headerRegular(6rem);
+    }
+    .headerImg {
+        display: none;
+    }
+}
