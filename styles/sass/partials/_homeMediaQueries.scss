@@ -1,7 +1,9 @@
 @use "_variables.scss" as *;
 @use "_mixins.scss" as *;
-// 1175px
+
+
 @media (max-width: 1043px) {
+
     .blogFlex1 {
         flex-direction: column;
 

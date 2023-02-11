@@ -1,0 +1,62 @@
+@media (max-width: 1200px) {
+    .contactFlex {
+        flex-direction: column-reverse;
+        padding: 50px;
+        .socialIconFlex {
+            justify-content: center;
+        }
+        .formContainer {
+            bottom: 0px;
+        }
+    }
+
+    .contactContainer {
+        padding-top: 10%;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        .socialIconFlex,
+        h6 {
+            flex-basis: 45%;
+        }
+        p {
+            line-height: 15px;
+            flex-grow: 1;
+        }
+    }
+}
+
+@media (max-width: 728px) {
+    .contactForm .userInfoFlex {
+        flex-direction: column;
+        box-shadow: none;
+        margin-bottom: 20px;
+        #name,
+        #email {
+            margin: 0;
+        }
+    }
+    
+
+    .contactMessageForm {
+        box-shadow: none;
+        .userInfoFlex {
+            padding: 0px;
+        }
+        .messageArea {
+            padding: 0px;
+            .messageText {
+                margin: 0px;
+            }
+        }
+    }
+    .contactContainer {
+        flex-direction: row;
+        font-size: 16px;
+        h6 {
+            font-size: 1.28rem;
+        }
+    }
+    
+}

@@ -620,7 +620,7 @@ section.infoSection .infoFlex .infoSection {
   background-image: url(../planted-final-assets/contact-header-1.jpg);
   background-size: cover;
 }
-.contactPage .headerName {
+.contactPage .contactHeaderName {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -632,11 +632,11 @@ section.infoSection .infoFlex .infoSection {
           align-items: flex-end;
   height: 70vh;
 }
-.contactPage .headerName h2 {
+.contactPage .contactHeaderName h2 {
   color: #fff;
   margin: 0 5vw 5vh 10vw;
 }
-.contactPage .headerName h2 span {
+.contactPage .contactHeaderName h2 span {
   color: #f8e71c;
   display: block;
 }
@@ -1047,5 +1047,83 @@ footer p {
     font-size: 3rem;
     font-family: "Josefin Sans", sans-serif;
     font-weight: 400;
+  }
+}
+@media (max-width: 1200px) {
+  .contactFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 50px;
+  }
+  .contactFlex .socialIconFlex {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contactFlex .formContainer {
+    bottom: 0px;
+  }
+  .contactContainer {
+    padding-top: 10%;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contactContainer .socialIconFlex,
+  .contactContainer h6 {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
+  .contactContainer p {
+    line-height: 15px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+@media (max-width: 728px) {
+  .contactForm .userInfoFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    margin-bottom: 20px;
+  }
+  .contactForm .userInfoFlex #name,
+  .contactForm .userInfoFlex #email {
+    margin: 0;
+  }
+  .contactMessageForm {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .contactMessageForm .userInfoFlex {
+    padding: 0px;
+  }
+  .contactMessageForm .messageArea {
+    padding: 0px;
+  }
+  .contactMessageForm .messageArea .messageText {
+    margin: 0px;
+  }
+  .contactContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-size: 16px;
+  }
+  .contactContainer h6 {
+    font-size: 1.28rem;
   }
 }
