@@ -1,6 +1,69 @@
 @use "_variables.scss" as *;
 @use "_mixins.scss" as *;
+// 1175px
+@media (max-width: 1043px) {
+    .blogFlex1 {
+        flex-direction: column;
 
+    }
+
+    .blogFlex2 {
+        flex-direction: column-reverse;
+    }
+
+    .blogFlex {
+        flex-basis: 50%;
+        .containerRight,
+        .containerLeft {
+            top: 0%;
+            margin: 50px;
+            .offsetRight,
+            .offsetLeft {
+                box-shadow: none;
+            }
+        }
+        .blog1,
+        .blog2 {
+            text-align: center;
+            padding: 5%;
+            width: 90%;
+        }
+    }
+
+    .infoFlex {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        }
+        .iconFlex {
+            justify-content: center;
+        }
+        p {
+            padding: 0px;
+        }
+    }
+
+
+@media (max-width: 915px) {
+    .founderFlex {
+        flex-direction: column;
+        .founderInfo {
+            text-align: center;
+            padding-top: 50px;
+        }
+    }
+    .flexGallery {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        li {
+            flex-basis: 30%;
+            padding: 20px;
+        }
+    }
+
+}
 @media (max-width: 800px) {
     h1 {
         padding-left: 60px;
@@ -11,3 +74,14 @@
         display: none;
     }
 }
+
+@media (max-width: 560px) {
+    
+}
+
+@media (max-width: 534px) {
+    h1 {
+        @include headerRegular(3rem);
+    }
+}
+
