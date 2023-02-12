@@ -6,33 +6,30 @@
 
     .blogFlex1 {
         flex-direction: column;
-
     }
-
     .blogFlex2 {
         flex-direction: column-reverse;
     }
-
     .blogFlex {
-        flex-basis: 50%;
-        .containerRight,
-        .containerLeft {
-            top: 0%;
-            margin: 50px;
-            .offsetRight,
-            .offsetLeft {
-                box-shadow: none;
-            }
+        justify-content: center;
+        align-items: center;
+        figure,
+        article {
+            margin: 30px;
         }
         .blog1,
         .blog2 {
-            text-align: center;
             padding: 5%;
-            width: 90%;
+            text-align: center;
         }
-    }
-
-    .infoFlex {
+        .containerLeft {
+            top: 0px;
+        }
+        .containerRight {
+            top: 0px;
+        }
+        }
+    .infoSectionMain .infoFlex {
         flex-direction: column;
         text-align: center;
         justify-content: center;
@@ -41,18 +38,24 @@
         .iconFlex {
             justify-content: center;
         }
-        p {
-            padding: 0px;
+        .infoSection p {
+            padding-left: 0px;
         }
     }
 
 
 @media (max-width: 915px) {
-    .founderFlex {
+    .founder .founderFlex {
         flex-direction: column;
         .founderInfo {
             text-align: center;
             padding-top: 50px;
+        }
+        figure {
+            padding: 30px;
+        }
+        article {
+            padding: 5%;
         }
     }
     .flexGallery {
@@ -77,13 +80,23 @@
     }
 }
 
-@media (max-width: 560px) {
+// @media (max-width: 560px) {
     
-}
+// }
 
 @media (max-width: 534px) {
     h1 {
-        @include headerRegular(3rem);
+        @include headerRegular(3.5rem);
     }
+}
+
+@media (max-width: 428px) {
+    .aboutPlanted .wrapper,
+    .infoSectionMain,
+    .founder {
+        padding: 5%;
+    }
+
+
 }
 

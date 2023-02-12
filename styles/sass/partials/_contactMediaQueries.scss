@@ -1,4 +1,6 @@
 @media (max-width: 1200px) {
+    
+        // FLEX for Main Section
     .contactFlex {
         flex-direction: column-reverse;
         padding: 50px;
@@ -9,7 +11,8 @@
             bottom: 0px;
         }
     }
-
+    
+    // CONTACT INFO
     .contactContainer {
         padding-top: 10%;
         text-align: center;
@@ -27,7 +30,25 @@
     }
 }
 
+@media (max-width: 800px) {
+// CONTACT HEADER SECTION
+    .contactPage .contactHeaderName {
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            margin: 0;
+        }
+    }
+}
+
 @media (max-width: 728px) {
+
+    .wrapper {
+        max-width: 95%;
+    }
+
+
     .contactForm .userInfoFlex {
         flex-direction: column;
         box-shadow: none;
@@ -58,5 +79,20 @@
             font-size: 1.28rem;
         }
     }
+    .formContainer {
+        flex-shrink: 0;
+    }
+
+    .greenLink {
+        line-height: 20px;
+        padding: 5px 30px;
+    }
     
+}
+
+
+@media (max-width: 428px) {
+    .greenLink {
+        line-height: normal;
+    }
 }

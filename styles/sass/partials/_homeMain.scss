@@ -50,7 +50,7 @@
 
     
 // INFO SECTION
-section.infoSection {
+.infoSectionMain {
     padding: 80px 0px;
     background-color: $sectionBackground;
     .infoFlex {
@@ -80,7 +80,7 @@ section.infoSection {
     }
 }
 
-.infoSection p {
+.infoSection p{
     padding-left: 70px;
 }
 // BANNER SECTION

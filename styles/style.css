@@ -347,7 +347,7 @@ strong {
 
 @media (max-width: 428px) {
   html {
-    font-size: 62.5%;
+    font-size: 16px;
   }
 }
 .navFlex {
@@ -524,18 +524,18 @@ strong {
   bottom: -50px;
 }
 
-section.infoSection {
+.infoSectionMain {
   padding: 80px 0px;
   background-color: #F0EFED;
 }
-section.infoSection .infoFlex {
+.infoSectionMain .infoFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-section.infoSection .infoFlex .infoSection {
+.infoSectionMain .infoFlex .infoSection {
   -ms-flex-preferred-size: calc(50% - 60px);
       flex-basis: calc(50% - 60px);
   margin: 30px 30px;
@@ -941,7 +941,7 @@ footer p {
     display: none;
   }
 }
-@media (max-width: 412px) {
+@media (max-width: 428px) {
   .menu {
     width: 100%;
   }
@@ -960,28 +960,29 @@ footer p {
             flex-direction: column-reverse;
   }
   .blogFlex {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .blogFlex .containerRight,
-  .blogFlex .containerLeft {
-    top: 0%;
-    margin: 50px;
-  }
-  .blogFlex .containerRight .offsetRight,
-  .blogFlex .containerRight .offsetLeft,
-  .blogFlex .containerLeft .offsetRight,
-  .blogFlex .containerLeft .offsetLeft {
-    -webkit-box-shadow: none;
-            box-shadow: none;
+  .blogFlex figure,
+  .blogFlex article {
+    margin: 30px;
   }
   .blogFlex .blog1,
   .blogFlex .blog2 {
-    text-align: center;
     padding: 5%;
-    width: 90%;
+    text-align: center;
   }
-  .infoFlex {
+  .blogFlex .containerLeft {
+    top: 0px;
+  }
+  .blogFlex .containerRight {
+    top: 0px;
+  }
+  .infoSectionMain .infoFlex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -998,20 +999,26 @@ footer p {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  p {
-    padding: 0px;
+  .infoSection p {
+    padding-left: 0px;
   }
 }
 @media (max-width: 915px) {
-  .founderFlex {
+  .founder .founderFlex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .founderFlex .founderInfo {
+  .founder .founderFlex .founderInfo {
     text-align: center;
     padding-top: 50px;
+  }
+  .founder .founderFlex figure {
+    padding: 30px;
+  }
+  .founder .founderFlex article {
+    padding: 5%;
   }
   .flexGallery {
     -webkit-box-orient: vertical;
@@ -1044,9 +1051,50 @@ footer p {
 }
 @media (max-width: 534px) {
   h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-family: "Josefin Sans", sans-serif;
     font-weight: 400;
+  }
+}
+@media (max-width: 428px) {
+  .aboutPlanted .wrapper,
+  .infoSectionMain,
+  .founder {
+    padding: 5%;
+  }
+}
+@media (max-width: 1266px) {
+  .blog .blogParent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .blog .blogParent .sideChild {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    height: 100%;
+  }
+  .blog .blogParent .sideChild .sideInfo {
+    width: 80vw;
+    margin-bottom: 5vh;
+  }
+  .sideInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .sideInfo .blogContainer {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    bottom: 0px;
   }
 }
 @media (max-width: 1200px) {
@@ -1089,7 +1137,23 @@ footer p {
             flex-grow: 1;
   }
 }
+@media (max-width: 800px) {
+  .contactPage .contactHeaderName {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactPage .contactHeaderName h2 {
+    margin: 0;
+  }
+}
 @media (max-width: 728px) {
+  .wrapper {
+    max-width: 95%;
+  }
   .contactForm .userInfoFlex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1125,5 +1189,18 @@ footer p {
   }
   .contactContainer h6 {
     font-size: 1.28rem;
+  }
+  .formContainer {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  .greenLink {
+    line-height: 20px;
+    padding: 5px 30px;
+  }
+}
+@media (max-width: 428px) {
+  .greenLink {
+    line-height: normal;
   }
 }

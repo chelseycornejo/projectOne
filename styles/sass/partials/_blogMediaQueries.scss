@@ -1,0 +1,30 @@
+@use "_variables.scss" as *;
+@use "_mixins.scss" as *;
+
+@media (max-width:1266px) {
+    .blog {
+        .blogParent {
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            .sideChild {
+                flex-basis: 50%;
+                height: 100%;
+                .sideInfo {
+                    width: 80vw;
+                    margin-bottom: 5vh;
+                }
+            }
+        }
+    }
+
+    .sideInfo {
+        display: flex;
+
+
+    .blogContainer {
+        align-items: center;
+        bottom: 0px;
+        }
+    }
+}
