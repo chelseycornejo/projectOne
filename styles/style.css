@@ -1134,6 +1134,18 @@ footer p {
     right: 0px;
   }
 }
+@media (max-width: 1214px) {
+  .sideInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 40%;
+  }
+}
 @media (max-width: 800px) {
   .blogPage .headerName {
     -webkit-box-pack: center;
@@ -1261,7 +1273,6 @@ footer p {
     margin: 0px;
   }
   .contactFlex {
-    padding: 0px;
-    margin: 5% 0;
+    padding: 5% 0;
   }
 }
