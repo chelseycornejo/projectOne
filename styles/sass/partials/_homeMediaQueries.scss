@@ -1,7 +1,12 @@
 @use "_variables.scss" as *;
 @use "_mixins.scss" as *;
 
-
+        // HEADER SECTION
+        .homePage .headerName .headerFlex h1 {
+            top: 0px;
+            left: 0px;
+        }
+        
 @media (max-width: 1043px) {
 
     .blogFlex1 {

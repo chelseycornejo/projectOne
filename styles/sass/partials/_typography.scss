@@ -1,0 +1,49 @@
+@use "_variables.scss" as *;
+@use "_mixins.scss" as *;
+
+h1 {
+    @include headerRegular(8.3rem);
+}
+
+h2 {
+    @include headerBold(4rem);
+    line-height: 92px;
+}
+
+h3 {
+    @include headerBold(2.815rem);
+    text-align: center;
+    letter-spacing: 1.3px;
+}
+
+h4 {
+    @include headerBold(2.15rem);
+    letter-spacing: 1.3px;
+}
+
+h5 {
+    @include headerBold(2.1rem);
+    letter-spacing: 1px;
+}
+
+h6 {
+    @include headerBold(1.6rem);
+    letter-spacing: 1px;
+}
+
+p {
+    line-height: 32px;
+}
+
+em,
+strong {
+    color: $date;
+}
+
+// MEDIA QUERY FOR MOBILE
+
+@media (max-width: 428px) {
+    html {
+        font-size: 16px;
+    }
+}

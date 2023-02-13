@@ -9,7 +9,7 @@
         .sideChild {
             flex-basis: 35%;
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
             height: 100%;
             .sideInfo {
                 background: $secondary;
@@ -30,10 +30,10 @@
     .sidePhoto {
         margin: 0;
         position: relative;
-        // width: 500px;
-        // width: 140%;
-        // left: -46%;
-        // top: -6%;
+        width: 500px;
+        width: 140%;
+        left: -46%;
+        top: -6%;
     }
 }
 
@@ -67,17 +67,18 @@
     .containerRight {
         margin: 0;
         // margin: 0;
-        // width: 815px;
+        width: 900px;
         position: relative;
-        // right: -20px;
+        right: -62.5px;
     }
 }
 
 .blogPost {
     width: 750px;
     position: relative;
-    right: 19px;
+    right: -43px;
 }
+
 // OUR MISSION BLOG POST SECTION
 .missionPost {
     padding: 50px 0px 25px 35px;
@@ -85,9 +86,7 @@
     border-bottom: 3px solid $accent;
 }
 
-
 // COMMENT SECTION
-
 .commentsSection {
     padding: 50px 0px 25px 35px;
     .comments {

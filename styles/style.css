@@ -233,9 +233,16 @@ body {
 }
 
 .wrapper {
-  max-width: 85%;
-  width: 1950px;
+  max-width: 1440px;
+  width: 85%;
   margin: 0 auto;
+}
+
+.contentContainer {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
 }
 
 figure {
@@ -264,6 +271,34 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.greenLink {
+  background-color: #0E902D;
+  font-size: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  line-height: 32px;
+  letter-spacing: 1px;
+  padding: 15px 30px;
+  border: 3px rgba(248, 231, 28, 0) solid;
+}
+
+.greenLink:hover,
+.greenLink:focus {
+  border: 3px #f8e71c solid;
+}
+
+.offsetLeft {
+  -webkit-box-shadow: 30px 30px 0px -11px #f8e71c;
+          box-shadow: 30px 30px 0px -11px #f8e71c;
+}
+
+.offsetRight {
+  -webkit-box-shadow: -30px 30px 0px -11px #f8e71c;
+          box-shadow: -30px 30px 0px -11px #f8e71c;
 }
 
 h1 {
@@ -315,34 +350,6 @@ p {
 em,
 strong {
   color: #074115;
-}
-
-.greenLink {
-  background-color: #0E902D;
-  font-size: 1rem;
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 700;
-  color: #fff;
-  text-align: center;
-  line-height: 32px;
-  letter-spacing: 1px;
-  padding: 15px 30px;
-  border: 3px rgba(248, 231, 28, 0) solid;
-}
-
-.greenLink:hover,
-.greenLink:focus {
-  border: 3px #f8e71c solid;
-}
-
-.offsetLeft {
-  -webkit-box-shadow: 30px 30px 0px -11px #f8e71c;
-          box-shadow: 30px 30px 0px -11px #f8e71c;
-}
-
-.offsetRight {
-  -webkit-box-shadow: -30px 30px 0px -11px #f8e71c;
-          box-shadow: -30px 30px 0px -11px #f8e71c;
 }
 
 @media (max-width: 428px) {
@@ -434,9 +441,8 @@ strong {
   height: 100vh;
 }
 .homePage .headerName {
-  height: 100%;
-}
-.homePage .headerFlex {
+  height: 100vh;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -449,8 +455,7 @@ strong {
 }
 .homePage .headerFlex h1 {
   color: white;
-  z-index: 1;
-  padding-right: 60px;
+  z-index: 2;
 }
 .homePage .headerFlex h1 span {
   color: yellow;
@@ -458,18 +463,14 @@ strong {
 }
 
 .headerImgFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  width: 50%;
 }
-.headerImgFlex .headerImg {
-  width: 680px;
+.headerImgFlex img {
   margin: 0;
-  position: relative;
-  bottom: 90vh;
+  position: absolute;
+  top: 25vh;
+  right: 0px;
+  width: 650px;
 }
 
 .aboutPlanted {
@@ -634,7 +635,6 @@ strong {
 }
 .contactPage .contactHeaderName h2 {
   color: #fff;
-  margin: 0 5vw 5vh 10vw;
 }
 .contactPage .contactHeaderName h2 span {
   color: #f8e71c;
@@ -758,7 +758,6 @@ strong {
 }
 .blogPage .headerName h2 {
   color: #f8e71c;
-  margin: 0 5vw 10vh 10vw;
 }
 
 .blog {
@@ -778,9 +777,9 @@ strong {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 100%;
 }
 .blog .blogParent .sideChild .sideInfo {
@@ -799,6 +798,10 @@ strong {
 .sideInfo .sidePhoto {
   margin: 0;
   position: relative;
+  width: 500px;
+  width: 140%;
+  left: -46%;
+  top: -6%;
 }
 
 .sideBar {
@@ -834,13 +837,15 @@ strong {
 }
 .blogContainer .containerRight {
   margin: 0;
+  width: 900px;
   position: relative;
+  right: -62.5px;
 }
 
 .blogPost {
   width: 750px;
   position: relative;
-  right: 19px;
+  right: -43px;
 }
 
 .missionPost {
@@ -946,6 +951,11 @@ footer p {
     width: 100%;
   }
 }
+.homePage .headerName .headerFlex h1 {
+  top: 0px;
+  left: 0px;
+}
+
 @media (max-width: 1043px) {
   .blogFlex1 {
     -webkit-box-orient: vertical;
@@ -1063,7 +1073,14 @@ footer p {
     padding: 5%;
   }
 }
-@media (max-width: 1266px) {
+@media (max-width: 1439px) {
+  .sideInfo .sidePhoto {
+    margin: 0;
+    position: relative;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+  }
   .blog .blogParent {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1080,10 +1097,12 @@ footer p {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     height: 100%;
+    margin-top: 5%;
   }
   .blog .blogParent .sideChild .sideInfo {
     width: 80vw;
     margin-bottom: 5vh;
+    margin-top: 5%;
   }
   .sideInfo {
     display: -webkit-box;
@@ -1095,6 +1114,37 @@ footer p {
         -ms-flex-align: center;
             align-items: center;
     bottom: 0px;
+  }
+  .blogContainer {
+    bottom: 0px;
+    margin-top: 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .blogContainer .containerRight {
+    margin: 0;
+    width: 73%;
+    position: relative;
+    right: 0;
+  }
+  .blogPost {
+    width: 76.1%;
+    position: relative;
+    right: 0px;
+  }
+}
+@media (max-width: 800px) {
+  .blogPage .headerName {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .blogPage .headerName h2 {
+    margin: 0;
   }
 }
 @media (max-width: 1200px) {
@@ -1109,6 +1159,9 @@ footer p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .contactFlex .formContainer {
     bottom: 0px;
@@ -1116,9 +1169,9 @@ footer p {
   .contactContainer {
     padding-top: 10%;
     text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1127,8 +1180,8 @@ footer p {
   }
   .contactContainer .socialIconFlex,
   .contactContainer h6 {
-    -ms-flex-preferred-size: 45%;
-        flex-basis: 45%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
   }
   .contactContainer p {
     line-height: 15px;
@@ -1152,9 +1205,12 @@ footer p {
 }
 @media (max-width: 728px) {
   .wrapper {
-    max-width: 95%;
+    max-width: 100%;
   }
-  .contactForm .userInfoFlex {
+  .contactFlex {
+    padding: 5% 0;
+  }
+  .contactFlex .contactForm .userInfoFlex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1163,38 +1219,38 @@ footer p {
             box-shadow: none;
     margin-bottom: 20px;
   }
-  .contactForm .userInfoFlex #name,
-  .contactForm .userInfoFlex #email {
+  .contactFlex .contactForm .userInfoFlex #name,
+  .contactFlex .contactForm .userInfoFlex #email {
     margin: 0;
   }
-  .contactMessageForm {
+  .contactFlex .contactMessageForm {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
-  .contactMessageForm .userInfoFlex {
+  .contactFlex .contactMessageForm .userInfoFlex {
     padding: 0px;
   }
-  .contactMessageForm .messageArea {
+  .contactFlex .contactMessageForm .messageArea {
     padding: 0px;
   }
-  .contactMessageForm .messageArea .messageText {
+  .contactFlex .contactMessageForm .messageArea .messageText {
     margin: 0px;
   }
-  .contactContainer {
+  .contactFlex .contactContainer {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     font-size: 16px;
   }
-  .contactContainer h6 {
+  .contactFlex .contactContainer h6 {
     font-size: 1.28rem;
   }
-  .formContainer {
+  .contactFlex .formContainer {
     -ms-flex-negative: 0;
         flex-shrink: 0;
   }
-  .greenLink {
+  .contactFlex .greenLink {
     line-height: 20px;
     padding: 5px 30px;
   }
@@ -1202,5 +1258,10 @@ footer p {
 @media (max-width: 428px) {
   .greenLink {
     line-height: normal;
+    margin: 0px;
+  }
+  .contactFlex {
+    padding: 0px;
+    margin: 5% 0;
   }
 }

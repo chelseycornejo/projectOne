@@ -1,7 +1,15 @@
 @use "_variables.scss" as *;
 @use "_mixins.scss" as *;
 
-@media (max-width:1266px) {
+@media (max-width: 1439px) {
+    .sideInfo .sidePhoto {
+        margin: 0;
+        position: relative;
+        width: 100%;
+        left: 0px;
+        top: 0px;
+    }
+
     .blog {
         .blogParent {
             flex-direction: column-reverse;
@@ -10,9 +18,11 @@
             .sideChild {
                 flex-basis: 50%;
                 height: 100%;
+                margin-top: 5%;
                 .sideInfo {
                     width: 80vw;
                     margin-bottom: 5vh;
+                    margin-top: 5%;
                 }
             }
         }
@@ -21,10 +31,39 @@
     .sideInfo {
         display: flex;
 
-
     .blogContainer {
         align-items: center;
         bottom: 0px;
+        }
+    }
+
+    .blogContainer {
+        bottom: 0px;
+        margin-top: 50px;
+        align-items: center;
+        .containerRight {
+            margin: 0;
+            width: 73%;
+            position: relative;
+            right: 0;
+        }
+    }
+
+    .blogPost {
+        width: 76.1%;
+        position: relative;
+        right: 0px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    // BLOG HEADER SECTION
+    .blogPage .headerName {
+        justify-content: center;
+        align-items: center;
+        h2 {
+            margin: 0;
         }
     }
 }

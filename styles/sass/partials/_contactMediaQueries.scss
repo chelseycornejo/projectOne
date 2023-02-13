@@ -6,6 +6,7 @@
         padding: 50px;
         .socialIconFlex {
             justify-content: center;
+            align-items: center;
         }
         .formContainer {
             bottom: 0px;
@@ -16,12 +17,12 @@
     .contactContainer {
         padding-top: 10%;
         text-align: center;
-        justify-content: center;
+        justify-content: space-evenly;
         display: flex;
         flex-wrap: wrap;
         .socialIconFlex,
         h6 {
-            flex-basis: 45%;
+            flex-basis: 50%;
         }
         p {
             line-height: 15px;
@@ -45,9 +46,11 @@
 @media (max-width: 728px) {
 
     .wrapper {
-        max-width: 95%;
+        max-width: 100%;
     }
 
+    .contactFlex {
+        padding: 5% 0;
 
     .contactForm .userInfoFlex {
         flex-direction: column;
@@ -59,7 +62,6 @@
         }
     }
     
-
     .contactMessageForm {
         box-shadow: none;
         .userInfoFlex {
@@ -72,27 +74,33 @@
             }
         }
     }
-    .contactContainer {
-        flex-direction: row;
-        font-size: 16px;
-        h6 {
-            font-size: 1.28rem;
+        .contactContainer {
+            flex-direction: row;
+            font-size: 16px;
+            h6 {
+                font-size: 1.28rem;
+            }
         }
-    }
-    .formContainer {
-        flex-shrink: 0;
-    }
+        .formContainer {
+            flex-shrink: 0;
+        }
 
-    .greenLink {
-        line-height: 20px;
-        padding: 5px 30px;
-    }
-    
+        .greenLink {
+            line-height: 20px;
+            padding: 5px 30px;
+        }
+    }   
 }
 
 
 @media (max-width: 428px) {
     .greenLink {
         line-height: normal;
+        margin: 0px;
     }
+    .contactFlex {
+        padding: 0px;
+        margin: 5% 0;
+    }
+
 }

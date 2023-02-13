@@ -32,7 +32,7 @@
                 <label for="check" class="openMenu"><i class="fa-solid fa-bars"></i></label>
             </ul>
         </nav><!-- END of .navFlex -->
-        <div class="headerName headerFlex">
+        <div class="headerName headerFlex wrapper">
             <h2>Blog</h2>
         </div>
     </header> <!-- END of HEADER SECTION -->
@@ -40,7 +40,7 @@
     <!-- MAIN SECTION -->
     <main>
         <section class="blog">
-            <div class="blogParent">
+            <div class="blogParent contentContainer">
                 <!-- SIDEBAR SECTION -->
                 <div class="sideChild">
                     <div class="sideInfo sideFlex">
@@ -51,7 +51,7 @@
                         
                         <!-- about section -->
                         <ul class="sideBar">
-                            <li class="aboutPlanted">
+                            <li class="plantedAboutSection">
                                 <h6>About Planted</h6>
                                 <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. <a href="index.html#about"><em><strong>Find out more.</strong></em></a></p>
                             </li>
@@ -66,7 +66,7 @@
                                 </ul> <!-- END of .recentPosts -->
                             </li>
                         </ul> <!-- END of .sideBar -->
-                    </div> 
+                    </div> <!-- END of .sideInfo .sideFlex -->
                 </div> <!-- END of .sideChild -->
                 
                 <!-- BLOGPOST SECTION -->
@@ -77,7 +77,6 @@
                     </figure>
                 
                     <div class="blogPost">
-
                         <!-- mission post section -->
                         <article class="missionPost">
                             <h4>Our mission at Planted</h4>
@@ -102,11 +101,12 @@
                                     </div>
                                 </li>
                                 <li class="commentFlex">
-                                    <figure><img src="./planted-final-assets/profile-image-2.jpg" alt="profile photo of person"></figure>
+                                    <figure>
+                                        <img src="./planted-final-assets/profile-image-2.jpg" alt="profile photo of person">
+                                    </figure>
                                     <div>
                                         <p class="date">Wednesday October 10th, 2018 by Julia</p>
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, quasi inventore, amet minus enim aperiam molestias
-                                            ipsa, corrupti odit a nostrum quos officia eos ut atque aliquam aliquid rem! Tenetur.</p>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, quasi inventore, amet minus enim aperiam molestias ipsa, corrupti odit a nostrum quos officia eos ut atque aliquam aliquid rem! Tenetur.</p>
                                     </div>
                                 </li>
                             </ul> <!-- END of .comments -->
@@ -134,7 +134,6 @@
                                 </div>
                             </div><!-- END of .offsetRight -->
                         </form> <!-- END of Form -->
-                        
                     </div> <!-- END of .blogPost -->
                 </div> <!-- END of .blogContainer -->
             </div> <!-- END of .blogParent -->

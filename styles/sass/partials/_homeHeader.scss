@@ -4,18 +4,18 @@
 .homePage {
     background-image: url(../planted-final-assets/home-image-1.jpg);
     background-size: cover;
-    height: 100vh;
+    height: 100vh;;
     .headerName {
-        height: 100%;
-    }
-    .headerFlex {
+        height: 100vh;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .headerFlex {
         h1 {
             color: white;
-            z-index: 1;
-            padding-right: 60px;
+            z-index: 2;
             span {
                 color: yellow;
                 display: block;
@@ -25,12 +25,14 @@
 }
 
 .headerImgFlex {
-    display: flex;
-    justify-content: flex-end;
-    .headerImg {
-        width: 680px;
+    width: 50%;
+    img {
         margin: 0;
-        position: relative;
-        bottom: 90vh;
+        position: absolute;
+        top: 25vh;
+        right: 0px;
+        width: 650px;
+        
     }
+
 }
