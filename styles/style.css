@@ -1098,6 +1098,11 @@ footer p {
     left: 0px;
     top: 0px;
   }
+  .sideInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .blog .blogParent {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1120,11 +1125,6 @@ footer p {
     width: 80vw;
     margin-bottom: 5vh;
     margin-top: 5%;
-  }
-  .sideInfo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
   .blogContainer {
     bottom: 0px;

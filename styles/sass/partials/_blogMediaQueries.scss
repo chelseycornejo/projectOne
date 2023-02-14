@@ -2,6 +2,7 @@
 @use "_mixins.scss" as *;
 
 @media (max-width: 1439px) {
+    // SIDE SECTION
     .sideInfo .sidePhoto {
         margin: 0;
         position: relative;
@@ -9,7 +10,12 @@
         left: 0px;
         top: 0px;
     }
+    
+    .sideInfo {
+        display: flex;
+    }
 
+    // BLOG SECTION
     .blog {
         .blogParent {
             flex-direction: column-reverse;
@@ -28,9 +34,6 @@
         }
     }
 
-    .sideInfo {
-        display: flex;
-    }
 
     .blogContainer {
         bottom: 0px;
@@ -58,6 +61,7 @@
 }
 
 @media (max-width: 1214px) {
+    // SIDE SECTION
     .sideInfo {
         display: flex;
         width: 40%;
@@ -91,6 +95,7 @@
         }
     }
 
+    // SIDE SECTION
     .sideInfo .sideBar {
         flex-direction: column;
         .plantedAboutSection,
