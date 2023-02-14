@@ -39,6 +39,7 @@
 
         h2 {
             margin: 0;
+            text-align: center;
         }
     }
 }
@@ -69,13 +70,17 @@
         }
         .messageArea {
             padding: 0px;
+            button {
+                margin: 0px;
+                margin-top: 15px
+            }
             .messageText {
                 margin: 0px;
             }
         }
     }
         .contactContainer {
-            flex-direction: row;
+            flex-direction: column;
             font-size: 16px;
             h6 {
                 font-size: 1.28rem;

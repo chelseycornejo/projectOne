@@ -356,6 +356,9 @@ strong {
   html {
     font-size: 16px;
   }
+  p {
+    line-height: 20px;
+  }
 }
 .navFlex {
   background: #000;
@@ -433,6 +436,16 @@ strong {
 
 .homeNav {
   background: none;
+}
+
+footer {
+  background: #2C2C2C;
+  color: #fff;
+}
+footer p {
+  margin: 0;
+  padding: 5spx 0;
+  text-align: center;
 }
 
 .homePage {
@@ -599,6 +612,9 @@ strong {
       flex-basis: 70%;
   padding-left: 50px;
 }
+.founder .founderFlex article p {
+  margin: 40px 0;
+}
 
 .flexGallery {
   display: -webkit-box;
@@ -632,6 +648,7 @@ strong {
       -ms-flex-align: end;
           align-items: flex-end;
   height: 70vh;
+  padding-bottom: 50px;
 }
 .contactPage .contactHeaderName h2 {
   color: #fff;
@@ -755,6 +772,7 @@ strong {
       -ms-flex-align: end;
           align-items: flex-end;
   height: 70vh;
+  padding-bottom: 50px;
 }
 .blogPage .headerName h2 {
   color: #f8e71c;
@@ -888,16 +906,6 @@ strong {
   background-color: #F0EFED;
 }
 
-footer {
-  background: #2C2C2C;
-  color: #fff;
-}
-footer p {
-  margin: 0;
-  padding: 5spx 0;
-  text-align: center;
-}
-
 @media (max-width: 800px) {
   .navFlex {
     background: none;
@@ -951,11 +959,6 @@ footer p {
     width: 100%;
   }
 }
-.homePage .headerName .headerFlex h1 {
-  top: 0px;
-  left: 0px;
-}
-
 @media (max-width: 1043px) {
   .blogFlex1 {
     -webkit-box-orient: vertical;
@@ -1049,7 +1052,6 @@ footer p {
 }
 @media (max-width: 800px) {
   h1 {
-    padding-left: 60px;
     text-align: center;
     font-size: 6rem;
     font-family: "Josefin Sans", sans-serif;
@@ -1071,6 +1073,21 @@ footer p {
   .infoSectionMain,
   .founder {
     padding: 5%;
+  }
+}
+@media (max-width: 400px) {
+  .infoSectionMain .infoFlex .iconFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .infoSectionMain .infoFlex .iconFlex .infoLogo {
+    margin-bottom: 10px;
+    margin-right: 0px;
   }
 }
 @media (max-width: 1439px) {
@@ -1109,12 +1126,6 @@ footer p {
     display: -ms-flexbox;
     display: flex;
   }
-  .sideInfo .blogContainer {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    bottom: 0px;
-  }
   .blogContainer {
     bottom: 0px;
     margin-top: 50px;
@@ -1124,14 +1135,21 @@ footer p {
   }
   .blogContainer .containerRight {
     margin: 0;
-    width: 73%;
+    width: 74%;
     position: relative;
     right: 0;
   }
+  .blogContainer .containerRight img {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
   .blogPost {
-    width: 76.1%;
+    width: 74%;
     position: relative;
     right: 0px;
+  }
+  .blogPost article {
+    padding: 5%;
   }
 }
 @media (max-width: 1214px) {
@@ -1139,11 +1157,29 @@ footer p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     width: 40%;
+  }
+  .sideInfo .sidePhoto {
+    display: none;
+  }
+  .sideInfo .sideBar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sideInfo .sideBar .plantedAboutSection,
+  .sideInfo .sideBar .recentPosts {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
+  .sideInfo .sideBar p {
+    margin-bottom: 0px;
   }
 }
 @media (max-width: 800px) {
@@ -1157,6 +1193,18 @@ footer p {
   }
   .blogPage .headerName h2 {
     margin: 0;
+    text-align: center;
+  }
+  .sideInfo .sideBar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sideInfo .sideBar .plantedAboutSection,
+  .sideInfo .sideBar .recentPosts {
+    width: 90%;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 1200px) {
@@ -1213,6 +1261,7 @@ footer p {
   }
   .contactPage .contactHeaderName h2 {
     margin: 0;
+    text-align: center;
   }
 }
 @media (max-width: 728px) {
@@ -1245,14 +1294,18 @@ footer p {
   .contactFlex .contactMessageForm .messageArea {
     padding: 0px;
   }
+  .contactFlex .contactMessageForm .messageArea button {
+    margin: 0px;
+    margin-top: 15px;
+  }
   .contactFlex .contactMessageForm .messageArea .messageText {
     margin: 0px;
   }
   .contactFlex .contactContainer {
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     font-size: 16px;
   }
   .contactFlex .contactContainer h6 {

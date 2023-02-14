@@ -30,11 +30,6 @@
 
     .sideInfo {
         display: flex;
-
-    .blogContainer {
-        align-items: center;
-        bottom: 0px;
-        }
     }
 
     .blogContainer {
@@ -43,24 +38,44 @@
         align-items: center;
         .containerRight {
             margin: 0;
-            width: 73%;
+            width: 74%;
             position: relative;
             right: 0;
+            img {
+                box-shadow: none;
+            }
         }
     }
 
     .blogPost {
-        width: 76.1%;
+        width: 74%;
         position: relative;
         right: 0px;
+        article {
+            padding: 5%;
+        }
     }
 }
 
 @media (max-width: 1214px) {
     .sideInfo {
         display: flex;
-        flex-direction: column;
         width: 40%;
+        .sidePhoto {
+            display: none;
+        }
+        .sideBar {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            .plantedAboutSection,
+            .recentPosts {
+                flex-basis: 40%;
+            }
+            p {
+                margin-bottom: 0px;
+            }
+        }
     }
 }
 
@@ -72,6 +87,16 @@
         align-items: center;
         h2 {
             margin: 0;
+            text-align: center;
+        }
+    }
+
+    .sideInfo .sideBar {
+        flex-direction: column;
+        .plantedAboutSection,
+        .recentPosts {
+            width: 90%;
+            margin-bottom: 20px;
         }
     }
 }

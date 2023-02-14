@@ -1,18 +1,26 @@
+// GLOBALS
 @use "./partials/setup";
 @use "./partials/global";
 @use "./partials/typography";
 @use "./partials/variables";
 @use "./partials/mixins";
 @use "./partials/navBar";
+@use "./partials/footer";
+
+// HOME PAGE
 @use "./partials/homeHeader";
 @use "./partials/homeMain";
+
+// CONTACT PAGE
 @use "./partials/contactHeader";
 @use "./partials/contactMain";
+
+// BLOG PAGE
 @use "./partials/blogHeader";
 @use "./partials/blogMain";
-@use "./partials/footer";
+
+// MEDIA QUERIES
 @use "./partials/navBarMediaQueries";
 @use "./partials/homeMediaQueries";
 @use "./partials/blogMediaQueries";
 @use "./partials/contactMediaQueries";
-// @use "./partials/mediaQueries";
