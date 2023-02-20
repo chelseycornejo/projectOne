@@ -90,7 +90,7 @@
                         <!-- comments section -->
                         <section class="commentsSection">
                             <h5>Comments:</h5>
-                            <ul class="comments">
+                            <ul class="comments" id="commentPosts">
                                 <li class="commentFlex">
                                     <figure>
                                         <img src="./planted-final-assets/profile-image.jpg" alt="profile photo of person">
@@ -130,7 +130,7 @@
                                 </fieldset>
                                 <div class="messageArea">
                                     <label for="commentText" class="sr-only">Enter your comment</label>
-                                    <textarea name="commentText" id="commentText" cols="80" rows="13" maxlength="300"
+                                    <textarea name="commentText" id="comment" class="commentText" cols="80" rows="13" maxlength="300"
                                     placeholder="Comment"></textarea>
                                     <div id="messageError"></div>
                                     <button type="submit" class="greenLink">Post Comment</button>
