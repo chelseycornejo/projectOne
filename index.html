@@ -150,17 +150,23 @@
     <!-- GALLERY SECTION -->
     <section class="gallery">
         <div class="wrapper">
-            <ul class="flexGallery">
-                <li>
-                    <img src="./planted-final-assets/gallery-image-1.jpg" alt="doorway in a greenhouse">
-                </li>
-                <li>
-                    <img src="./planted-final-assets/gallery-image-2.jpg" alt="succulents in pots">
-                </li>
-                <li>
-                    <img src="./planted-final-assets/gallery-image-3.jpg" alt="assortment of many cacti in pots">
-                </li>
-            </ul> <!-- END of .flexGallery -->
+            <div class="carousel">
+                <ul class="flexGallery slides">
+                    <li class="slide">
+                        <img src="./planted-final-assets/gallery-image-1.jpg" alt="doorway in a greenhouse">
+                    </li>
+                    <li class="slide">
+                        <img src="./planted-final-assets/gallery-image-2.jpg" alt="succulents in pots">
+                    </li>
+                    <li class="slide">
+                        <img src="./planted-final-assets/gallery-image-3.jpg" alt="assortment of many cacti in pots">
+                    </li>
+                </ul> <!-- END of .flexGallery -->
+                <div class="controls">
+                    <button class="carouselButton prev" data-carousel-button>&#8656;</button>
+                    <button class="carouselButton next" data-carousel-button>&#8658;</button>
+                </div> <!-- END of .controls -->
+            </div> <!-- END of .carousel -->
         </div> <!-- END of .wrapper -->
     </section> <!-- END of GALLERY SECTION -->
 
@@ -170,6 +176,9 @@
             <p>Copyright © 2018 HackerYou</p>
         </div>
     </footer><!-- END of FOOTER SECTION -->
+
+    <!-- JAVASCRIPT SECTION -->
+    <script src="./script.js"></script>
 </body>
 </html>
 

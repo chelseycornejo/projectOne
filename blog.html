@@ -119,17 +119,20 @@
                                     <div class="underline">
                                         <label for="name" class="sr-only">Enter your name</label>
                                         <input type="text" name="name" id="name" placeholder="Name">
+                                        <div id="nameError"></div>
                                     </div>
                                     
                                     <div class="underline">
                                         <label for="email" class="sr-only">Enter your email</label>
                                         <input type="email" name="email" id="email" placeholder="Email address">
+                                        <div id="emailError"></div>
                                     </div>
                                 </fieldset>
                                 <div class="messageArea">
                                     <label for="commentText" class="sr-only">Enter your comment</label>
                                     <textarea name="commentText" id="commentText" cols="80" rows="13" maxlength="300"
                                     placeholder="Comment"></textarea>
+                                    <div id="messageError"></div>
                                     <button type="submit" class="greenLink">Post Comment</button>
                                 </div>
                             </div><!-- END of .offsetRight -->
@@ -144,5 +147,7 @@
     <footer>
         <p>Copyright © 2018 HackerYou</p>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>

@@ -72,23 +72,25 @@
 
                     <!-- FORM SECTION -->
                     <div class="formContainer">
-
                         <form class="contactForm containerRight" method="POST" action="#" name="contactForm">
                             <div class="offsetRight contactMessageForm">
                                 <fieldset class="userInfoFlex">
                                     <div class="underline">
                                         <label for="name" class="sr-only">Enter your name</label>
                                         <input type="text" name="name" id="name" class="name" placeholder="Name">
+                                        <div id="nameError"></div>
                                     </div>
                                     
                                     <div class="underline">
                                         <label for="email" class="sr-only">Enter your email</label>
                                         <input type="email" name="email" id="email" class="email" placeholder="Email address">
+                                        <div id="emailError"></div>
                                     </div>
                                 </fieldset>
                                 <div class="messageArea">
                                     <label class="sr-only" or="message">Please enter your message</label>
                                     <textarea name="messageText" id="messagText" class="messageText" cols="80" rows="13" maxlength="300" placeholder="Message"></textarea>
+                                    <div id="messageError"></div>
                                     <button type="submit" class="greenLink contactSubmitß">Submit</button>
                                 </div>
                             </div><!-- END of .offsetRight -->
@@ -103,5 +105,7 @@
     <footer>
         <p>Copyright © 2018 HackerYou</p>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>
