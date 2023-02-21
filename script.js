@@ -10,7 +10,6 @@ const errorMessage = document.getElementById('messageError');
 
 // Attach an event listener to the form element
 formEl.addEventListener('submit', function(e) {
-        
     // save the entered text value from the input within a variable
     const userName = (nameEl.value.trim());
     const userEmail = (emailEl.value.trim());
