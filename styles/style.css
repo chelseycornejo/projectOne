@@ -361,7 +361,21 @@ strong {
   }
 }
 .navFlex {
-  background: #000;
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.navFlex h5 {
+  color: #fff;
+  font-weight: 400;
+  padding-left: 5vw;
 }
 .navFlex .navList {
   width: 100%;
@@ -378,10 +392,8 @@ strong {
   position: relative;
   padding: 12px 20px;
 }
-.navFlex .navList h5 {
-  color: #fff;
-  font-weight: 400;
-  padding-left: 5vw;
+.navFlex .navList .currentPage {
+  color: #f8e71c;
 }
 
 .menu {
@@ -408,6 +420,9 @@ strong {
 }
 .menu li a:hover {
   border: 3px rgb(248, 231, 28) solid;
+}
+.menu li a:active {
+  color: #f8e71c;
 }
 
 .openMenu,

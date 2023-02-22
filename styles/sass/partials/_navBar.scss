@@ -4,7 +4,15 @@
 @use "_mixins.scss" as *;
 
 .navFlex {
-    background: $navBackground;
+    background-color: $navBackground;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    h5 {
+        color: #fff;
+        font-weight: 400;
+        padding-left: 5vw;
+    }
     .navList {
         width: 100%;
         display: flex;
@@ -13,10 +21,8 @@
         list-style: none;
         position: relative;
         padding: 12px 20px;
-        h5 {
-            color: #fff;
-            font-weight: 400;
-            padding-left: 5vw;
+        .currentPage {
+            color: $accent;
         }
     }
 }
@@ -38,6 +44,9 @@
         }
         a:hover {
             border: 3px rgba(248, 231, 28, 1) solid;
+        }
+        a:active {
+            color: $accent;
         }
     }
 }
