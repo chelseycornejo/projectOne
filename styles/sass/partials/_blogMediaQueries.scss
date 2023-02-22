@@ -105,3 +105,16 @@
         }
     }
 }
+
+@media (max-width: 728px) {
+.commentForm .userInfoFlex {
+        flex-direction: column;
+        box-shadow: none;
+        margin-bottom: 20px;
+
+        #name,
+        #email {
+            margin: 0;
+        }
+    }
+}

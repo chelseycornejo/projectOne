@@ -1222,6 +1222,21 @@ footer p {
     margin-bottom: 20px;
   }
 }
+@media (max-width: 728px) {
+  .commentForm .userInfoFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    margin-bottom: 20px;
+  }
+  .commentForm .userInfoFlex #name,
+  .commentForm .userInfoFlex #email {
+    margin: 0;
+  }
+}
 @media (max-width: 1200px) {
   .contactFlex {
     -webkit-box-orient: vertical;
