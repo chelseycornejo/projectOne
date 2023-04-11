@@ -372,6 +372,7 @@ a {
     line-height: 20px;
   }
 }
+
 .navFlex .navList {
   width: 100%;
   display: -webkit-box;
@@ -459,6 +460,9 @@ a {
 }
 .menu li a:hover {
   border: 3px rgb(248, 231, 28) solid;
+}
+.menu li a:active {
+  color: #f8e71c;
 }
 
 .contactNavBar,
@@ -1291,6 +1295,7 @@ footer p {
     margin-bottom: 20px;
   }
 }
+
 @media (max-width: 560px) {
   .userInfoFlexBlog {
     -webkit-box-orient: vertical;

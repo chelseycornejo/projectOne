@@ -22,6 +22,7 @@
     }
 }
 
+
 .menu {
     display: flex;
     flex-basis: 100%;
@@ -77,6 +78,9 @@
         }
         a:hover {
             border: 3px rgba(248, 231, 28, 1) solid;
+        }
+        a:active {
+            color: $accent;
         }
     }
 }
