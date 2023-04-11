@@ -5,7 +5,6 @@
 
 
 .navFlex {
-    // background: $navBackground;
     .navList {
         width: 100%;
         display: flex;
@@ -22,6 +21,7 @@
         }
     }
 }
+
 
 .menu {
     display: flex;
@@ -78,6 +78,9 @@
         }
         a:hover {
             border: 3px rgba(248, 231, 28, 1) solid;
+        }
+        a:active {
+            color: $accent;
         }
     }
 }
