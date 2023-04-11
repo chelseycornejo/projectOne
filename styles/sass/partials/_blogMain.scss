@@ -117,3 +117,37 @@
 .commentForm textarea {
     background-color: $sectionBackground;
 }
+
+.userInfoFlexBlog {
+    display: flex;
+    border: none;
+    justify-content: space-between;
+
+    .underline {
+        flex-basis: 49%;
+    }
+}
+
+.userInfoFlexBlog,
+.messageArea {
+    padding: 0 25px;
+
+    input,
+    textarea,
+    button {
+        width: 100%;
+        padding: 15px;
+        margin: 20px 10px 0 10px;
+
+    }
+
+    input {
+        border: none;
+        border-bottom: $links 3px solid;
+    }
+
+    textarea {
+        border: 3px $links solid;
+        resize: none;
+    }
+}

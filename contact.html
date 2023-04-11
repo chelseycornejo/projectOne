@@ -16,20 +16,21 @@
     <!-- HEADER SECTION -->
     <header class="contactPage">
     <!-- nav starts -->
-    <nav class="navFlex blogNav">
-        <ul class="navList">
-            <h5>Planted</h5>
-            <input type="checkbox" id="check">
-            <span class="menu">
-                <li><a href="index.html" class="currentPage">Home</a></li>
-                <li><a href="./index.html#about">About</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <label for="check" class="closeMenu"><i class="fa-solid fa-xmark" aria-label="exit menu"></i></label>
-            </span>
-            <label for="check" class="openMenu"><i class="fa-solid fa-bars" aria-label="open menu"></i></label>
-        </ul>
-    </nav><!-- END of .navFlex -->
+    <div class="menu contactNavBar">
+        <h5>Planted</h5>
+        <nav class="navFlex contactNav">
+            <button type="button" class="exitMenu"><span class="sr-only">exit menu button</span><i
+                    class="fa-solid fa-xmark"></i></button>
+            <ul class="navList">
+                <li><a href="index.html" class="burgerNav">Home</a></li>
+                <li><a href="#about" class="burgerNav">About</a></li>
+                <li><a href="blog.html" class="burgerNav">Blog</a></li>
+                <li><a href="contact.html" class="currentPage burgerNav">Contact</a></li>
+            </ul>
+        </nav><!-- END of .navFlex -->
+        <button type="button" class="openMenu"><span class="sr-only">open menu button</span><i class="fa-solid fa-bars"
+                aria-label="open menu"></i></button>
+    </div> <!-- end of .menu -->
 
         <div class="contactHeaderName headerFlex wrapper">
             <h2>Get in<span>touch</span></h2>
@@ -88,7 +89,7 @@
                                     </div>
                                 </fieldset>
                                 <div class="messageArea">
-                                    <label class="sr-only" or="message">Please enter your message</label>
+                                    <label class="sr-only" for="message">Please enter your message</label>
                                     <textarea name="messageText" id="messagText" class="messageText" cols="80" rows="13" maxlength="300" placeholder="Message"></textarea>
                                     <div id="messageError"></div>
                                     <button type="submit" class="greenLink contactSubmitß">Submit</button>
@@ -103,9 +104,12 @@
 
     <!-- FOOTER SECTION -->
     <footer>
-        <p>Copyright © 2018 HackerYou</p>
+        <p>Made at <a href="https://junocollege.com/" target="_blank"><span class="sr-only">opens in new window</span> Juno
+        College</a> © 2023 <a href="https://chelseycornejo.com/" target="_blank"><span class="sr-only">opens in new
+            window</span>Chelsey Cornejo</a></p>
     </footer>
 
     <script src="./script.js"></script>
+    <script src="./form.js"></script>
 </body>
 </html>
