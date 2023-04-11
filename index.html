@@ -18,20 +18,19 @@
     <!-- HEADER SECTION -->
     <header class="homePage">
         <!-- nav starts -->
-        <nav class="navFlex homeNav">
+        <div class="menu">
             <h5>Planted</h5>
-            <ul class="navList">
-                <input type="checkbox" id="check">
-                <span class="menu">
-                    <li><a href="index.html" class="currentPage">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <label for="check" class="closeMenu"><i class="fa-solid fa-xmark" aria-label="exit menu"></i></label>
-                </span>
-                <label for="check" class="openMenu"><i class="fa-solid fa-bars" aria-label="open menu"></i></label>
-            </ul>
-        </nav><!-- END of .navFlex -->
+            <nav class="navFlex homeNav">
+                <button type="button" class="exitMenu"><span class="sr-only">exit menu button</span><i class="fa-solid fa-xmark"></i></button>
+                <ul class="navList">
+                    <li><a href="index.html" class="currentPage burgerNav">Home</a></li>
+                    <li><a href="#about" class="burgerNav">About</a></li>
+                    <li><a href="blog.html" class="burgerNav">Blog</a></li>
+                    <li><a href="contact.html" class="burgerNav">Contact</a></li>
+                </ul>
+            </nav><!-- END of .navFlex -->
+            <button type="button" class="openMenu"><span class="sr-only">open menu button</span><i class="fa-solid fa-bars" aria-label="open menu"></i></button>
+        </div> <!-- end of .menu -->
         
         <div class="contentContainer">
             <!-- header title starts -->
@@ -151,13 +150,13 @@
     <section class="gallery">
         <div class="wrapper">
             <ul class="flexGallery">
-                <li>
+                <li class="slide" data-active>
                     <img src="./planted-final-assets/gallery-image-1.jpg" alt="doorway in a greenhouse">
                 </li>
-                <li>
+                <li class="slide">
                     <img src="./planted-final-assets/gallery-image-2.jpg" alt="succulents in pots">
                 </li>
-                <li>
+                <li class="slide">
                     <img src="./planted-final-assets/gallery-image-3.jpg" alt="assortment of many cacti in pots">
                 </li>
             </ul> <!-- END of .flexGallery -->
@@ -167,9 +166,12 @@
     <!-- FOOTER SECTION -->
     <footer>
         <div class="wrapper">
-            <p>Copyright © 2018 HackerYou</p>
+            <p>Made at <a href="https://junocollege.com/" target="_blank"><span class="sr-only">opens in new window</span> Juno College</a> © 2023 <a href="https://chelseycornejo.com/" target="_blank"><span class="sr-only">opens in new window</span>Chelsey Cornejo</a></p>
         </div>
     </footer><!-- END of FOOTER SECTION -->
+
+    <!-- JAVASCRIPT SECTION -->
+    <script src="./script.js"></script>
 </body>
 </html>
 
